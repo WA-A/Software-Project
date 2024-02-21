@@ -4,7 +4,6 @@ Feature: User Registration
   Scenario Outline: Successful User Registration
     Given The user is on the registration page
     When The user enters <E-mail> , <Password> , <Phone> , <User-Name>  # Email is unique
-    And Clicks the register button
     Then I should E-mail and Password is valid
 
     Examples:
@@ -18,7 +17,6 @@ Feature: User Registration
   Scenario Outline: Attempting to Register with Existing E-mail
     Given The user is on the registration page
     When The user enters an existing <E-mail> ,a valid  password <Password>, phone <Phone> and user name <User-Name>
-    And Clicks the register button
     Then The user should see an error message indicating the Email is already taken
 
     Examples:
