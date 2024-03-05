@@ -2,11 +2,11 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EventManagement {
+public class AddDeleteUpdate {
 
     private List<Event> events;
 
-    public EventManagement() {
+    public AddDeleteUpdate() {
         this.events = new ArrayList<>();
     }
 
