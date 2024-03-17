@@ -1,5 +1,6 @@
 package org.example;
 
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,7 +14,7 @@ public class LoginAdmain {
     }
 
     @When("The admin enters a valid username Wasan and password {int}")
-    public void the_admin_enters_a_valid_username_wasan_and_password(Integer int1) {
+    public void the_admin_enters_a_valid_username_wasan_and_password(Integer int1) throws PendingException {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
