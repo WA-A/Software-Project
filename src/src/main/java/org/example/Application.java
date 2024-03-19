@@ -17,12 +17,11 @@ public class Application {
 
     public Application() {
 
-
-
-        venues.add(new Venue(1,true,120));
-        venues.add(new Venue(2, true, 200));
-
         events.add(new Event(1, 1, "2024-03-19", 10, 14));
+        venues.add(new Venue(1,true,200));
+        venues.add(new Venue(2,true,150));
+
+
     }
 
 
