@@ -14,7 +14,6 @@ public class users {
     private String pass;
     private Date BD;
 
-/////Get
 
 }
 

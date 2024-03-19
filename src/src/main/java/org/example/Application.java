@@ -2,22 +2,46 @@ package org.example;
 
 
 
-import java.awt.HeadlessException;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
+import java.util.List;
+
+class Venue {
+    int id;
+    boolean available;
+    int capacity;
+
+    public Venue(int id, boolean available, int capacity) {
+        this.id = id;
+        this.available = available;
+        this.capacity = capacity;
+    }
+}
+
+class Event {
+    int id;
+    int venueId;
+    String date;
+    int startAt;
+    int endAt;
+
+    public Event(int id, int venueId, String date, int startAt, int endAt) {
+        this.id = id;
+        this.venueId = venueId;
+        this.date = date;
+        this.startAt = startAt;
+        this.endAt = endAt;
+    }
+}
 
 public class Application {
 
-    private venue v;
+    private List<Venue> venues = new ArrayList<>();
+    private List<Event> events = new ArrayList<>();
+
+
     private users u;
-    private event e;
+
     /////////////////////////////////////
     private boolean flag;
 
@@ -27,8 +51,13 @@ public class Application {
     private boolean is_venue_time=true;
     private boolean is_overlap;
 
-////////////////////////////////////
 
+    public Application() {
+        venues.add(new Venue(1, true, 100));
+        venues.add(new Venue(2, true, 200));
+
+        events.add(new Event(1, 1, "2024-03-19", 10, 14));
+    }
 
 
     public boolean get_is_venue_av(){
@@ -39,8 +68,8 @@ public class Application {
         return is_venue_cap;
     }
 
-    public void SetWhoLogIn(String t){
-        WhoLogIn=t;
+    public void SetWhoLogIn(String who){
+        WhoLogIn=who;
     }
 
     public boolean getWhoLogIn(){
@@ -51,166 +80,55 @@ public class Application {
         return is_venue_time;
     }
 
-    public boolean book_venue(int event_id,boolean av1,boolean t1,boolean cap1){
-        if(av1&&t1&&cap1){
-            return true;
-            //booking venue by id of event_id
+    public boolean bookVenue(int venueId, boolean av, boolean t, boolean cap) {
+        for (Venue venue : venues) {
+            if (venue.id == venueId && venue.available == av && cap && t)  {
+
+                return true;
+            }
+        }
+        return false;
+
+    }
+    public boolean Does_venue_av(int venueId) {
+        for (Venue venue : venues) {
+            // Check if the venue's ID matches the provided ID
+            if (venue.id == venueId) {
+                // Return the availability of the found venue
+                return venue.available;
+            }
+        }
+        // If no venue with the given ID is found, assume it is not available
+        return false;
+    }
+
+
+
+    public boolean Does_venue_time(int venueId, String date, int startAt, int endAt) {
+        for (Event event : events) {
+            // Check if the event is at the same venue and on the same date
+            if (event.venueId == venueId && event.date.equals(date)) {
+                // Check for time overlap
+                // Assuming startAt and endAt are based on a 24-hour clock (0-23)
+                if ((startAt < event.endAt && endAt > event.startAt)) {
+                    // Overlap found, so the venue is not available at the proposed time
+                    return false;
+                }
+            }
+        }
+        // No overlapping events found, so the venue is available
+        return true;
+    }
+
+    public boolean doesVenueHaveCapacity(int venueId, int guestNumber) {
+        for (Venue venue : venues) {
+            if (venue.id == venueId && venue.capacity >= guestNumber) {
+                return true;
+            }
         }
         return false;
     }
-    public boolean Does_venue_av(int v_number){
-
-        String url = "jdbc:postgresql://localhost:5432/postgres";
-        String userDB ="postgres";
-        String passwordDB="12345";
-
-        String st_venue = "select * from venue";
-        try {
-            Connection con_venue=DriverManager.getConnection(url,userDB,passwordDB);;
-            Statement statement_venue=con_venue.createStatement();
-            ResultSet rs_venue = statement_venue.executeQuery(st_venue);
-
-            while(rs_venue.next()){
-                if(rs_venue.getString(1).equals(Integer.toString(v_number)))
-                {
-
-                    if(is_venue_av=rs_venue.getBoolean(2)){
-                        return true;
-                    }
-
-                }
-
-            }
-            return false;
-
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            return false;
-        }
-
-
-    }
-
-
-    public boolean Does_venue_time(int v_number,String d,int start_at,int end_at){
-
-
-        String url = "jdbc:postgresql://localhost:5432/postgres";
-        String userDB ="postgres";
-        String passwordDB="12345";
-        String st_event = "select * from event";
-
-        String st_calender = "select * from calender";
-
-
-
-
-        try {
-            Connection con_event=DriverManager.getConnection(url,userDB,passwordDB);;
-            Statement statement_event=con_event.createStatement();
-            ResultSet rs_event = statement_event.executeQuery(st_event);
-
-            Connection con_calender=DriverManager.getConnection(url,userDB,passwordDB);;
-            Statement statement_calender=con_calender.createStatement();
-            ResultSet rs_calender = statement_calender.executeQuery(st_calender);
-
-
-
-            while(rs_event.next()) {
-
-                int x1=rs_event.getInt(8);
-                int x2=rs_event.getInt(1);
-
-                if(x1 == v_number) {
-                    while(rs_calender.next()){
-                        JOptionPane.showMessageDialog(null,"this is start while rs_cal");
-
-                        if(rs_calender.getInt(5)==x2){
-                            String sDateCalender=rs_calender.getString(2);
-
-
-                            if((start_at<end_at)&&(sDateCalender.equals(d))){
-
-
-                                String sStartCalender=rs_calender.getString(3);
-                                String sEndCalender=rs_calender.getString(4);
-
-                                String s31=sStartCalender.substring(0,2);
-                                int cStart = Integer.parseInt(s31);
-                                String s41=sEndCalender.substring(0,2);
-                                int cEnd=Integer.parseInt(s41);
-
-
-                                //IntRang interval = new IntRang(cStart,cEnd);
-
-                                if(((end_at<cEnd)&&(cStart<end_at))||((cStart<start_at)&&(cEnd>start_at)||(cEnd<=end_at)&&(cStart>=start_at))){
-                                    is_venue_time=false;
-                                    return false;
-                                }
-
-                            }
-                        }
-                    }
-                }
-            }
-
-            return false;
-
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            return false;
-        }
-
-
-    }
-
-    public boolean Does_venue_capasity(int v_number,int guist_number){
-
-        String url = "jdbc:postgresql://localhost:5432/postgres";
-        String userDB ="postgres";
-        String passwordDB="12345";
-        String st_venue = "select * from venue";
-
-
-        try {
-
-            Connection con_venue=DriverManager.getConnection(url,userDB,passwordDB);;
-            Statement statement_venue=con_venue.createStatement();
-            ResultSet rs_venue = statement_venue.executeQuery(st_venue);
-
-
-            while(rs_venue.next()){
-
-                if(rs_venue.getInt(1) == v_number){
-                    JOptionPane.showMessageDialog(null,rs_venue.getInt(3)+"   "+guist_number);
-                    if(rs_venue.getInt(3)>guist_number){
-
-                        is_venue_cap = true;
-                        return true;
-                    }
-                }
-            }
-            return false;
-
-
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            return false;
-
-        }
-
-
-
-
-
-
-
-
-
-
-    }
 
 }
+
+
