@@ -1,4 +1,4 @@
 package org.example;
 
-public class AdminManagement {
+public class  AdminManagement {
 }
