@@ -24,9 +24,6 @@ class Event {
     String date;
     int startAt;
     int endAt;
- checkbudget(budget){
-
- }
     public Event(int id, int venueId, String date, int startAt, int endAt) {
         this.id = id;
         this.venueId = venueId;
