@@ -1,82 +1,49 @@
 package org.example;
-
-
-
-import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import java.util.List;
 
-class Venue {
-    int id;
-    boolean available;
-    int capacity;
 
-    public Venue(int id, boolean available, int capacity) {
-        this.id = id;
-        this.available = available;
-        this.capacity = capacity;
-    }
-}
-
-class Event {
-    int id;
-    int venueId;
-    String date;
-    int startAt;
-    int endAt;
-    public Event(int id, int venueId, String date, int startAt, int endAt) {
-        this.id = id;
-        this.venueId = venueId;
-        this.date = date;
-        this.startAt = startAt;
-        this.endAt = endAt;
-    }
-}
 
 public class Application {
 
-    private List<Venue> venues = new ArrayList<>();
+
+    private String whoLogIn;
+    private boolean isVenueAv;
+    private boolean isVenueCap;
+    private boolean isVenueTime =true;
     private List<Event> events = new ArrayList<>();
 
-
-    private users u;
-
-    /////////////////////////////////////
-    private boolean flag;
-
-    private String WhoLogIn;
-    private boolean is_venue_av;
-    private boolean is_venue_cap;
-    private boolean is_venue_time=true;
-    private boolean is_overlap;
+    private List<Venue> venues = new ArrayList<>();
 
 
     public Application() {
-        venues.add(new Venue(1, true, 100));
-        venues.add(new Venue(2, true, 200));
 
         events.add(new Event(1, 1, "2024-03-19", 10, 14));
+        venues.add(new Venue(1,true,200));
+        venues.add(new Venue(2,true,150));
+
+
     }
 
 
-    public boolean get_is_venue_av(){
-        return is_venue_av;
+    public boolean getIsVenueAv(){
+        return isVenueAv;
     }
 
-    public boolean get_is_venue_cap() {
-        return is_venue_cap;
+    public boolean getIsVenueCap() {
+        return isVenueCap;
     }
 
-    public void SetWhoLogIn(String who){
-        WhoLogIn=who;
+    public void setWhoLogIn(String who){
+        whoLogIn =who;
     }
 
     public boolean getWhoLogIn(){
-        return WhoLogIn.equals("users");
+        return whoLogIn.equals("users");
     }
 
-    public boolean get_is_venue_time(){
-        return is_venue_time;
+    public boolean getIsVenueTime(){
+        return isVenueTime;
     }
 
     public boolean bookVenue(int venueId, boolean av, boolean t, boolean cap) {
@@ -89,7 +56,7 @@ public class Application {
         return false;
 
     }
-    public boolean Does_venue_av(int venueId) {
+    public boolean doesVenueAv(int venueId) {
         for (Venue venue : venues) {
             // Check if the venue's ID matches the provided ID
             if (venue.id == venueId) {
@@ -103,17 +70,16 @@ public class Application {
 
 
 
-    public boolean Does_venue_time(int venueId, String date, int startAt, int endAt) {
+    public boolean doesVenueTime(int venueId, String date, int startAt, int endAt) {
         for (Event event : events) {
             // Check if the event is at the same venue and on the same date
-            if (event.venueId == venueId && event.date.equals(date)) {
-                // Check for time overlap
-                // Assuming startAt and endAt are based on a 24-hour clock (0-23)
-                if ((startAt < event.endAt && endAt > event.startAt)) {
-                    // Overlap found, so the venue is not available at the proposed time
+            // Overlap found, so the venue is not available at the proposed time
+            if (event.venueId == venueId && event.date.equals(date) &&startAt < event.endAt && endAt > event.startAt) {
+
+
                     return false;
                 }
-            }
+
         }
         // No overlapping events found, so the venue is available
         return true;

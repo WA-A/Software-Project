@@ -1,17 +1,27 @@
 package Softwear_Project_Acceptance_Test;
 
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
 import org.example.Application;
+import org.example.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.sql.Date;
+
+import javax.swing.JOptionPane;
+
+import org.junit.Test;
+
+
+
 public class TestingForProject {
     private boolean flag;
     private final Application application;
+    private Venue v1=new Venue(99,true,200);
 
 
     public TestingForProject(Application app){
@@ -20,29 +30,29 @@ public class TestingForProject {
 
     @Given("i am user")
     public void iAmUser() {
-        application.SetWhoLogIn("users");
+        application.setWhoLogIn("users");
         assertEquals(true,application.getWhoLogIn());
     }
 
     @When("i booking a venue that reserved")
     public void iBookingAVenueThatReserved() {
-        application.Does_venue_av(2);
-        assertFalse(application.get_is_venue_av());
+        application.doesVenueAv(2);
+        assertFalse(application.getIsVenueAv());
     }
 
     @When("The venue is booked at this time")
     public void theVenueIsBookedAtThisTime() {
-        application.Does_venue_time(1,"2026-10-02",7,8);
-        assertTrue(application.get_is_venue_time());
+        application.doesVenueTime(1,"2026-10-02",7,8);
+        assertTrue(application.getIsVenueTime());
 
     }
     @Then("Booking venue failed")
     public void bookingVenueFailed() {
-        application.Does_venue_time(1,"2026-10-02",2,3);
-        application.Does_venue_av(2);
-        application.doesVenueHaveCapacity(1, 1000);
+        application.doesVenueTime(1,"2026-10-02",2,3);
+        application.doesVenueAv(2);
+        application.doesVenueHaveCapacity(1,1000);
 
-        assertFalse(application.get_is_venue_time()&&application.get_is_venue_av()&&application.get_is_venue_cap());
+        assertFalse(application.getIsVenueTime()&&application.getIsVenueAv()&&application.getIsVenueCap());
 
     }
 
@@ -80,22 +90,22 @@ public class TestingForProject {
     @When("venue  capasity not enough")
     public void venueCapasityNotEnough() {
         application.doesVenueHaveCapacity(1, 100);
-        assertTrue(application.get_is_venue_cap());
+        assertTrue(application.getIsVenueCap());
     }
     @When("i am user and venue is perfectly available")
     public void iAmUserAndVenueIsPerfectlyAvailable() {
 
-        application.Does_venue_time(1,"2026-10-02",7,8);
-        application.Does_venue_av(1);
+        application.doesVenueTime(1,"2026-10-02",7,8);
+        application.doesVenueAv(1);
         application.doesVenueHaveCapacity(1, 25);
 
-        assertTrue(application.get_is_venue_time()&&application.get_is_venue_av()&&application.get_is_venue_cap());
+        assertTrue(application.getIsVenueTime()&&application.getIsVenueAv()&&application.getIsVenueCap());
     }
     @Then("booking Succesfully Done")
     public void bookingSuccesfullyDone() {
 
-        application.Does_venue_time(1,"2026-10-02",7,8);
-        assertTrue(application.bookVenue(1,application.Does_venue_av(1),application.get_is_venue_time(),application.doesVenueHaveCapacity(1,25)));
+        application.doesVenueTime(1,"2026-10-02",7,8);
+        assertTrue(application.bookVenue(1,application.doesVenueAv(1),application.getIsVenueTime(),application.doesVenueHaveCapacity(1,25)));
     }
 
 
