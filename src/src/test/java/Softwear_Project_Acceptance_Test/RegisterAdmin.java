@@ -1,5 +1,6 @@
-package org.example;
+package Softwear_Project_Acceptance_Test;
 import io.cucumber.java.en.When;
+import org.example.AdminManagement;
 
 import java.util.Scanner;
 
