@@ -1,27 +1,0 @@
-
-x
-java:S4973C"<Strings and Boxed types should be compared using "equals()".(ç¿±ØJ$2fad133f-934c-4dc1-a0f5-22281134e2de
-	java:S116"URename this field "AdminEmail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãí¨¥J$4cdee95c-6000-47ef-9235-5e65a260caee
-˜	java:S116"XRename this field "AdminPassword" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Û¤êûÿÿÿÿJ$21176457-376f-4f68-b391-bf0755971522
-”	java:S116"TRename this field "AdminName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µä·¨ÿÿÿÿÿJ$f9a58269-d34b-4553-88bc-09e4b45bac1d
-	java:S116"URename this field "AdminPhone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êƒï¡J$a1bd5ab3-b251-40b1-8d85-ff146bfbfd69
-‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ²©êJ$fb1e35e7-1804-4441-a232-ae4fd862f80b
-k	java:S106"+Replace this use of System.out by a logger.(Êë£«øÿÿÿÿJ$9f578132-54a2-4f9e-9e4f-b3515087f610
-f	java:S106"+Replace this use of System.out by a logger.(ªŒŒ«J$c78a9ad2-bbc9-4185-a15d-e698e5f2e5f3
-k	java:S106"+Replace this use of System.out by a logger.(îäý‹ùÿÿÿÿJ$bf7d4b1a-0ba6-49c1-9ff9-d254f747bd51
-k	java:S106$"+Replace this use of System.out by a logger.(ÿÔµÌûÿÿÿÿJ$e4b77d95-2c13-40cd-8d9d-6648599638b4
-k	java:S106*"+Replace this use of System.out by a logger.(µ´ÏêúÿÿÿÿJ$27191e32-a6d8-4c2d-889a-1c144c0ad5c8
-Ž	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùýÀ‚øÿÿÿÿJ$89f6e603-e29c-44a0-976e-f5706547da5d
-k	java:S1061"+Replace this use of System.out by a logger.(Êë£«øÿÿÿÿJ$2dafd8aa-85ec-4e99-8447-3df925a8cca6
-f	java:S1065"+Replace this use of System.out by a logger.(ªŒŒ«J$cdadf9d7-24e9-4787-8fe1-3a3563869bc6
-k	java:S1069"+Replace this use of System.out by a logger.(îäý‹ùÿÿÿÿJ$d39e9a2b-a6c4-4451-89ec-dd44dc5eadf8
-k	java:S106>"+Replace this use of System.out by a logger.(ÿÔµÌûÿÿÿÿJ$794aed45-6ab7-452f-961f-39bd1a50b4cc
-f	java:S106D"+Replace this use of System.out by a logger.(Ü‡ÀßJ$e59e83e4-e8d3-4eb8-b874-a36efcac10ef
-j
-java:S1068".Remove this unused "AdminEmail" private field.(ãí¨¥J$c8f91275-3e9b-4aa5-a91b-9bbc03ed6403
-r
-java:S1068"1Remove this unused "AdminPassword" private field.(¯Û¤êûÿÿÿÿJ$aabcfef8-99fd-4bab-abce-9a89533ff04b
-n
-java:S1068"-Remove this unused "AdminName" private field.(µä·¨ÿÿÿÿÿJ$418a55bc-3153-42c7-bef6-ab33d0dcdb12
-j
-java:S1068".Remove this unused "AdminPhone" private field.(êƒï¡J$7225783c-760f-4f32-a051-62d767d54478

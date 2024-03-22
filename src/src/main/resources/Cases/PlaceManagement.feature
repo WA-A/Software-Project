@@ -4,7 +4,7 @@ Feature: Venue Management
     Given I am logged in as a "serviceProvider"
     When I enter the following details:
       | Id  | Name             | Capacity | Amenities                  | Pricing | Location         |
-      | 101 | Lakeside Retreat | 200      | Outdoor area, Parking, Bar | 5000    | Mountain View, CA |
+      | 101 | Lakeside Retreat | 200      | Outdoor area, Parking, Bar | 5500    | Mountain View, CA |
     Then "Lakeside Retreat" with Id "101" should be added to the venue list
 
   Scenario: Removing a venue by a serviceProvider
