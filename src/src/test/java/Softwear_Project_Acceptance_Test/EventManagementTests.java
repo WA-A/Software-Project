@@ -1,4 +1,4 @@
-package org.example;
+package Softwear_Project_Acceptance_Test;
 
 import org.testng.annotations.Test;
 import static org.junit.jupiter.api.Assertions.*;
