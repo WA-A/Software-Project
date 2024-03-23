@@ -22,17 +22,7 @@ public Event(){
     this.serviceProviderName= null;
    this.userName=null;
 }
-    public Event(int packegeId,String userName,String eventTitle,String location, String date, String startAt, String endAt,int numOfInvitees,String serviceProviderName) {
-        this.packegeId=packegeId;
-        this.userName=userName;
-        this.eventTitle= eventTitle;
-        this.location=location;
-        this.date = date;
-        this.startAt = startAt;
-        this.endAt = endAt;
-        this.numOfInvitees=numOfInvitees;
-        this.serviceProviderName=serviceProviderName;
-    }
+
     public void setEventTitle(String eventTitle) {
     this.eventTitle=eventTitle;
     }
