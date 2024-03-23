@@ -1,6 +1,4 @@
 
-g
-7src/src/main/java/org/example/EventManagementTests.java,a\3\a3773f8c07091f7db9ebf4a5887ad8d532a91828
 ^
 .src/src/main/java/org/example/Application.java,9\1\9124026a7cb6db50b19f84ad157797441e734b50
 X
@@ -11,8 +9,6 @@ y
 Isrc/src/test/java/Softwear_Project_Acceptance_Test/TestingForProject.java,1\c\1c46bbb2a9052d7ff322b4c18c6c644b1db67cc2
 r
 Bsrc/src/test/java/Softwear_Project_Acceptance_Test/Acceptance.java,a\f\afa074fe0d96b8a0ebf68f8c3b2852fc820fd83c
-g
-7src/src/main/java/org/example/FilterServicProvider.java,c\9\c9a3385a65e69d807682efc26e67927eb4d3fbe1
 Å
 Q.idea/sonarlint/securityhotspotstore/9/1/9124026a7cb6db50b19f84ad157797441e734b50,6\e\6e98afb976da125f867a05630ecbaf885fd3c83a
 w
@@ -41,3 +37,29 @@ G.idea/sonarlint/issuestore/5/2/526e380c1772199a4de4fe138eb92b6814523610,e\c\ec
 Q.idea/sonarlint/securityhotspotstore/c/9/c9a3385a65e69d807682efc26e67927eb4d3fbe1,b\b\bb8494d06faa19a3225a83d0449ce5dc4438563a
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+a
+1src/src/main/java/org/example/UserManagement.java,f\d\fd6458e3333608c13d53e3220d73fc1efb96b4c8
+b
+2src/src/main/java/org/example/AdminManagement.java,2\b\2bd47f5fd5c021757be4e7ef8f91028706c7ebe8
+b
+2src/src/main/java/org/example/AddDeleteUpdate.java,d\a\da7b21f008b00050cface37bd85d822446bfe467
+W
+'src/src/main/java/org/example/Main.java,6\6\669a682f64be735900bbe8848ad97b310e91fa23
+Z
+*src/src/main/java/org/example/packege.java,d\6\d690a5d968661c4616afb5bcda851fde1461a681
+Z
+*src/src/main/java/org/example/Packege.java,7\6\76c6944c001f88964d303fc8d36ceb641ea7fc79
+[
++src/src/main/java/org/example/Calender.java,e\2\e24d80aa940d042cc33fb885e58a4ec9d11ebe45
+X
+(src/src/main/java/org/example/Admin.java,f\3\f30a77985dc6f786bd1e353c12381695fa4b426e
+b
+2src/src/main/java/org/example/ServiceProvider.java,3\c\3cf4051833b78e47c5d68b7a98e953669a6d006a
+s
+Csrc/src/test/java/Softwear_Project_Acceptance_Test/checkBudget.java,7\c\7c0375d01f862446e28eb6ddfe2c3d1591bec7e6
+W
+'src/src/main/java/org/example/User.java,5\c\5cddc8ba217bb4d02cd0dadec3cc51fd14e025af
+u
+Esrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java,a\a\aa69db0bb630c0ef985ab72bd73da827cfe7ca34
+t
+Dsrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java,2\b\2b148bc8c0c2a51af58ec0beb034ca4371a8475e
