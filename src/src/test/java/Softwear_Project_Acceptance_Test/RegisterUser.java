@@ -1,7 +1,6 @@
 package Softwear_Project_Acceptance_Test;
 
 import io.cucumber.java.en.Given;
-import org.example.UserManagement;
 
 import java.util.Scanner;
 

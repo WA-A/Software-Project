@@ -1,0 +1,30 @@
+
+”
+java:S1192"XDefine a constant instead of duplicating this literal " Plases Choose Page : 
+" 3 times.(¡ÛÜÅJ$d0467e9d-7818-4afa-948f-7eb4a91f7612
+
+java:S1192 "SDefine a constant instead of duplicating this literal "Enter Number 1/2 
+" 3 times.(ÔØ¤€J$2c03d92c-ae05-450f-a590-23512b9b43ff
+‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÀ‹äşÿÿÿÿJ$869ff4e2-c279-4784-8d9c-80347eb2f19d
+Œ	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¥“­J$ebcbe4d6-e8dc-4069-b338-2d2ce43f6d24
+Œ	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¥“­J$d090e4bf-6f5d-4b7f-9fe1-f9b7a0abf5a9
+Œ	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¥“­J$1a1e0633-904c-4376-bd0f-6f5194a05c37
+f	java:S106"+Replace this use of System.out by a logger.(Ä¶øJ$cee755e1-8851-409a-b79a-b735ae32666c
+n
+java:S6126"2Replace this String concatenation with Text block.(Ä¶øJ$a76776cb-20aa-43b8-9660-502569adb1ac
+k	java:S106"+Replace this use of System.out by a logger.(·ŸÆêûÿÿÿÿJ$e1cd2c1c-021d-4c16-bd89-8852a47e20eb
+f	java:S106"+Replace this use of System.out by a logger.(ŠÄÕ±J$649f1c1a-ebe5-46e8-9a3e-7df0ab98f1a7
+n
+java:S6126"2Replace this String concatenation with Text block.(ŠÄÕ±J$8d6f51cb-9c71-4a1e-a023-4b86b6e5ddcb
+f	java:S106 "+Replace this use of System.out by a logger.(ÔØ¤€J$bb244247-379d-4862-a731-13b82805a780
+f	java:S106/"+Replace this use of System.out by a logger.(´ÅÈÔJ$bc5116b4-0ec0-4348-b615-d4eaf24d4594
+n
+java:S6126/"2Replace this String concatenation with Text block.(´ÅÈÔJ$eb726bd4-0e01-4889-91cc-8229011d65a3
+f	java:S1065"+Replace this use of System.out by a logger.(ÔØ¤€J$72777c31-299a-4325-898a-52e41b16ec35
+k	java:S106E"+Replace this use of System.out by a logger.(®ÚúèüÿÿÿÿJ$fcab9b1a-edc0-4daa-8e0f-f78ce7b9d598
+s
+java:S6126E"2Replace this String concatenation with Text block.(®ÚúèüÿÿÿÿJ$8e6fbfc7-89c4-4e7a-9237-ac61df6ed207
+f	java:S106K"+Replace this use of System.out by a logger.(ÔØ¤€J$04374117-a67d-469a-828c-b0aa73a570ef
+f	java:S106X"+Replace this use of System.out by a logger.(…àœıJ$62ab8d00-01ef-439a-87c1-562c1359fbb3
+_
+java:S1128"$Remove this unused import 'java.io'.(¬›ãDJ$76ab7205-c7df-4b6c-8f65-98401eafb267
