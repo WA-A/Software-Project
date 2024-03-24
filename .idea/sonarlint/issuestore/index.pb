@@ -215,3 +215,5 @@ W
 'src/src/main/java/org/example/Main.java,6\6\669a682f64be735900bbe8848ad97b310e91fa23
 u
 Esrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java,a\a\aa69db0bb630c0ef985ab72bd73da827cfe7ca34
+X
+(src/src/main/java/org/example/Admin.java,f\3\f30a77985dc6f786bd1e353c12381695fa4b426e
