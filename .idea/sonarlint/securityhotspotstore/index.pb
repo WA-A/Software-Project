@@ -11,7 +11,7 @@ Bsrc/src/test/java/Softwear_Project_Acceptance_Test/Acceptance.java,a\f\afa074f
 Q.idea/sonarlint/securityhotspotstore/9/1/9124026a7cb6db50b19f84ad157797441e734b50,6\e\6e98afb976da125f867a05630ecbaf885fd3c83a
 w
 G.idea/sonarlint/issuestore/9/2/922d7731ffd0a961e6926a63cb6d18c089aa885a,4\8\48853e974a1d7e68b2151b212864c645b48507b3
-�
+
 Q.idea/sonarlint/securityhotspotstore/9/2/922d7731ffd0a961e6926a63cb6d18c089aa885a,1\9\19aa3b0b4a37d8de011619cf0b88e0f1453c84f5
 w
 G.idea/sonarlint/issuestore/a/f/afa074fe0d96b8a0ebf68f8c3b2852fc820fd83c,2\7\27ed2ac60982a4f9bcd9c310095187b17b5d1e1a
@@ -25,6 +25,7 @@ w
 G.idea/sonarlint/issuestore/5/2/526e380c1772199a4de4fe138eb92b6814523610,e\c\ecb9454d8e7d13cd9b496f78e78fee2aea66ecbe
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+
 w
 G.idea/sonarlint/issuestore/4/8/48853e974a1d7e68b2151b212864c645b48507b3,4\3\435d568d37515a22e7d2c63f04db5e020034df27
 w
@@ -192,4 +193,4 @@ W
 u
 Esrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java,a\a\aa69db0bb630c0ef985ab72bd73da827cfe7ca34
 w
-Gsrc/src/test/java/Softwear_Project_Acceptance_Test/PlaceManageTest.java,9\3\93103aebc7625568190251a138f5c5c708e6e2f0
+
