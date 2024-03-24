@@ -2,7 +2,7 @@ package org.example;
 
 public class Venue {
     int id;
-    int w;
+    int wt;
     boolean available;
     int capacity;
 
