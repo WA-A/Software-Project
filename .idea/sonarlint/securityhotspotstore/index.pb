@@ -56,11 +56,7 @@ Dsrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java,2\b\2b148
 w
 G.idea/sonarlint/issuestore/d/a/da7b21f008b00050cface37bd85d822446bfe467,9\a\9a4ccdae67cbbd50d54a16194d86135f96ed7bea
 Å
-Q.idea/sonarlint/securityhotspotstore/2/b/2bd47f5fd5c021757be4e7ef8f91028706c7ebe8,7\5\756b31c284aa261cfd9b526b15f39e415ad1819c
-Å
 Q.idea/sonarlint/securityhotspotstore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af,7\8\7825b0118d5bdcfd009ad7fe9ea1f6866b47bcbb
-Å
-Q.idea/sonarlint/securityhotspotstore/f/d/fd6458e3333608c13d53e3220d73fc1efb96b4c8,4\c\4cac310cf9f28272adcff3f9bc43d2a2efcf096d
 w
 G.idea/sonarlint/issuestore/a/a/aa69db0bb630c0ef985ab72bd73da827cfe7ca34,1\0\10c68c831a640d4f466bce2f76c142b2e9b6150f
 w
