@@ -65,13 +65,11 @@ u
 Esrc/src/test/java/Softwear_Project_Acceptance_Test/BookVenueTest.java,a\7\a79b6635a2d1300bbd83da7b651a6aaf7a85eeb9
 b
 2src/src/main/java/org/example/AddDeleteUpdate.java,d\a\da7b21f008b00050cface37bd85d822446bfe467
-a
-1src/src/main/java/org/example/UserManagement.java,f\d\fd6458e3333608c13d53e3220d73fc1efb96b4c8
 ;
 src/pom.xml,e\d\ede8cb65219dd2c6946d2acf49a0d97d43715393
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-�
+
 Q.idea/sonarlint/securityhotspotstore/3/8/38ba54725d8a4ae482e5a10c1215769edccf5d85,6\a\6a872174597ea8e23dfe075ee9e2978f0d669593
 �
 Q.idea/sonarlint/securityhotspotstore/0/0/004099ac5c6265aef52682464dcf3c6ae143419b,e\f\eff5f133625833e1bbcc376e255d3e09657f5a95
@@ -119,13 +117,13 @@ G.idea/sonarlint/issuestore/f/2/f2cdf143b979b5069829434b91326a1df0cf16ba,c\1\c1
 Q.idea/sonarlint/securityhotspotstore/e/d/ede8cb65219dd2c6946d2acf49a0d97d43715393,1\3\132c881cab5bc6d77755f756e9f3ea834f1b6c92
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
-�
+
 Q.idea/sonarlint/securityhotspotstore/a/7/a79b6635a2d1300bbd83da7b651a6aaf7a85eeb9,8\6\86930e1027a7082eb697adfc58843825a26bf749
 �
 Q.idea/sonarlint/securityhotspotstore/5/e/5ea6cb46429eccc37aac71bf67eac0eedc0ea21c,2\c\2c92ccbaac59419eba2e45482acfbbb257379698
 �
 Q.idea/sonarlint/securityhotspotstore/4/3/435d568d37515a22e7d2c63f04db5e020034df27,b\f\bf01e4db7f67826e4701325e86362921f04dd2ff
-�
+
 Q.idea/sonarlint/securityhotspotstore/9/0/909762385fc6eb20f922a91c6865741308b57f2c,e\0\e0ea4108d198a3d2e4e87c48063db9d2bffad652
 �
 Q.idea/sonarlint/securityhotspotstore/f/3/f36b6dad53928b62649111809705b2a6dd48d270,e\0\e06d2ffb19a1ab5de58269c26b8ebf46d64bab0f
@@ -147,7 +145,7 @@ w
 G.idea/sonarlint/issuestore/9/0/909762385fc6eb20f922a91c6865741308b57f2c,c\e\ce7799643a95553c6bee1d403d6cb738907a7f2c
 w
 G.idea/sonarlint/issuestore/9/f/9f1a9a9b76f22a832d0e807a621561c2d189cfb3,0\d\0dbdec589e0345134e66397503eae970a29bccf8
-�
+
 Q.idea/sonarlint/securityhotspotstore/f/d/fd6458e3333608c13d53e3220d73fc1efb96b4c8,4\c\4cac310cf9f28272adcff3f9bc43d2a2efcf096d
 �
 Q.idea/sonarlint/securityhotspotstore/1/2/1234c5d6d0237807f3840958d58acfd0d498147a,6\f\6f351ff7f3f6cea8b3cfc6fd9aa5b97cc984488f
@@ -159,8 +157,6 @@ w
 G.idea/sonarlint/issuestore/b/b/bbf202272a96de5cd6b6828ffdc55fb3ce45289c,8\4\84e95bd0ea795e5307464eb72e7bd95d9f673c00
 �
 Q.idea/sonarlint/securityhotspotstore/d/b/db94e3f92d87f60b4d6de00a30e2d059d8a3dd09,5\c\5c82c4e77d69096382a31daa566b4f4f7b3213a5
-b
-2src/src/main/java/org/example/AdminManagement.java,2\b\2bd47f5fd5c021757be4e7ef8f91028706c7ebe8
 p
 @src/src/test/java/Softwear_Project_Acceptance_Test/Calender.java,6\d\6d3db8b36cafb76d2e7004c9368ed5b550f462ce
 s
@@ -191,5 +187,4 @@ W
 'src/src/main/java/org/example/Main.java,6\6\669a682f64be735900bbe8848ad97b310e91fa23
 u
 Esrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java,a\a\aa69db0bb630c0ef985ab72bd73da827cfe7ca34
-w
-Gsrc/src/test/java/Softwear_Project_Acceptance_Test/PlaceManageTest.java,9\3\93103aebc7625568190251a138f5c5c708e6e2f0
+
