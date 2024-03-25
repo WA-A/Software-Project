@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158e7d92-7442-4636-a011-b3e6895c04fd" name="Changes" comment="Workspace" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +16,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Batool" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -43,20 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: addNewPackege.executor": "Run",
-    "Cucumber Java.Feature: checkBudget.executor": "Run",
-    "Cucumber Java.Feature: filterServicProvider.executor": "Run",
-    "JUnit.Acceptance.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Yazan",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: addNewPackege.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: checkBudget.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: filterServicProvider.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Acceptance.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Cucumber Java.Feature: addNewPackege">
     <configuration name="Feature: addNewPackege" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -124,14 +120,14 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="158e7d92-7442-4636-a011-b3e6895c04fd" name="Changes" comment="after delete sonar files" />
+      <changelist id="c3347efa-15e8-4c06-80ed-53428a03b36a" name="Changes" comment="" />
       <created>1709472674167</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -329,23 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711395486421</updated>
     </task>
-    <task id="LOCAL؜-٠٠٠٢٥" summary="Workspace">
+    <task id="LOCAL-00025" summary="trying">
       <option name="closed" value="true" />
-      <created>1711400529733</created>
-      <option name="number" value="٠٠٠٢٥" />
-      <option name="presentableId" value="LOCAL؜-٠٠٠٢٥" />
-      <option name="project" value="LOCAL؜" />
-      <updated>1711400529734</updated>
+      <created>1711395938191</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1711395938191</updated>
     </task>
-    <task id="LOCAL؜-٠٠٠٢٦" summary="Workspace">
-      <option name="closed" value="true" />
-      <created>1711400642468</created>
-      <option name="number" value="٠٠٠٢٦" />
-      <option name="presentableId" value="LOCAL؜-٠٠٠٢٦" />
-      <option name="project" value="LOCAL؜" />
-      <updated>1711400642468</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -374,7 +362,6 @@
     <MESSAGE value="hello all" />
     <MESSAGE value="hello" />
     <MESSAGE value="trying" />
-    <MESSAGE value="Workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying" />
   </component>
 </project>
