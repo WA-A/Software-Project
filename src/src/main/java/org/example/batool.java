@@ -4,7 +4,7 @@ public class batool {
    private int id;
    private String name;
    batool() {
-       id = 0;
+       id = 9;
        name=null;
    }
    public void setId(int id){
