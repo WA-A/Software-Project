@@ -7,6 +7,7 @@ public class batool {
    batool() {
        id = 0;
        name=null;
+       b=0;
    }
    public void setId(int id){
        this.id=id;
@@ -20,5 +21,8 @@ public class batool {
 
     public String getName() {
         return this.name;
+    }
+    public int getB(){
+       return this.b;
     }
 }
