@@ -5,7 +5,7 @@ public class batool {
    private String name;
    private int b;
    batool() {
-       id = 0;
+       id = 9;
        name=null;
        b=0;
    }

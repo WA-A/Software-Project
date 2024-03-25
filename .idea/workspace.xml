@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3347efa-15e8-4c06-80ed-53428a03b36a" name="Changes" comment="trying" />
+    <list default="true" id="c3347efa-15e8-4c06-80ed-53428a03b36a" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,11 +37,14 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2dBDeZ1wtWElXAmdsDs4hmo68iG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: addNewPackege.executor": "Run",
@@ -53,7 +58,8 @@
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "settings.sync"
   }
-}]]></component>
+}]]>
+  </component>
   <component name="RunManager" selected="Cucumber Java.Feature: addNewPackege">
     <configuration name="Feature: addNewPackege" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -326,31 +332,6 @@
       <option name="project" value="LOCAL" />
       <updated>1711395486421</updated>
     </task>
-    <task id="LOCAL-00025" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711395938191</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1711395938191</updated>
-    </task>
-    <task id="LOCAL-00026" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711400135052</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1711400135052</updated>
-    </task>
-    <task id="LOCAL-00027" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711401482313</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1711401482313</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -379,6 +360,7 @@
     <MESSAGE value="hello all" />
     <MESSAGE value="hello" />
     <MESSAGE value="trying" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
