@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3347efa-15e8-4c06-80ed-53428a03b36a" name="Changes" comment="trying">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at________Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list default="true" id="c3347efa-15e8-4c06-80ed-53428a03b36a" name="Changes" comment="test">
+    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,35 +52,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: addNewPackege.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: checkBudget.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: filterServicProvider.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Acceptance.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Batool&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
-
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Cucumber Java.Feature: addNewPackege.executor": "Run",
-    "Cucumber Java.Feature: checkBudget.executor": "Run",
-    "Cucumber Java.Feature: filterServicProvider.executor": "Run",
-    "JUnit.Acceptance.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Batool",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "settings.sync"
+    "git-widget-placeholder": "Batool"
   }
-}</component>
-}]]>
-  </component>
+}]]></component>
   <component name="RunManager" selected="Cucumber Java.Feature: addNewPackege">
     <configuration name="Feature: addNewPackege" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -149,14 +120,6 @@
         <item itemvalue="Cucumber Java.Feature: filterServicProvider" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
-        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
