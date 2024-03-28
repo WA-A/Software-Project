@@ -7,6 +7,7 @@ public class ServiceProvider {
     private String password;
     private String email;
     private String phoneNum;
+    private boolean isLogged;
 
 public ServiceProvider(){
     username=null;
@@ -14,6 +15,12 @@ public ServiceProvider(){
     email=null;
     phoneNum=null;
 }
+    public void setLogged(boolean isLogged){
+        this.isLogged=isLogged;
+    }
+    public boolean getLogged(){
+        return this.isLogged;
+    }
 public String getPassword(){
     return this.password;
 }
