@@ -47,10 +47,7 @@ public class PlaceManageTest {
     @When("I update the venue {string} with name {string}, capacity {string}, amenities {string}, pricing {string}, location {string}")
     public void i_update_the_venue_with_name_capacity_amenities_pricing_location(String id, String name, String capacity, String amenities, String pricing, String location) {
         int packageId = Integer.parseInt(id);
-        int packageCapacity = Integer.parseInt(capacity);
-        int packagePrice = Integer.parseInt(pricing);
-        Packege updatedPackage = new Packege(packageId, packagePrice, packageCapacity, location, name, amenities, "ServiceProviderName"); // ServiceProviderName is a placeholder
-        lastOperationResult = packageManager.updatePackage(packageId, updatedPackage);
+               lastOperationResult = packageManager.updatePackage(packageId);
     }
 
     @Then("Id {string} should have updated details in the venue list")

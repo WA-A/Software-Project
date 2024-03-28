@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,13 +53,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Batool&quot;
-  }
-}</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: addNewPackege">
+
     <configuration name="Feature: addNewPackege" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/addNewPackege.feature" />
@@ -117,12 +111,14 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Cucumber Java.Feature: addNewPackege" />
         <item itemvalue="Cucumber Java.Feature: checkBudget" />
         <item itemvalue="Cucumber Java.Feature: filterServicProvider" />
       </list>
     </recent_temporary>
   </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -348,31 +344,7 @@
       <option name="project" value="LOCAL" />
       <updated>1711401482313</updated>
     </task>
-    <task id="LOCAL-00028" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711402896404</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1711402896404</updated>
-    </task>
-    <task id="LOCAL-00029" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711449540935</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1711449540935</updated>
-    </task>
-    <task id="LOCAL-00030" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711589223872</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1711589223872</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+
     <servers />
   </component>
   <component name="UnknownFeatures">
