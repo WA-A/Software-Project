@@ -32,7 +32,7 @@ public Event(){
     public void setPackegeId(int packegeId) {
         this.packegeId=packegeId;
     }
-    public void setocation(String location) {
+    public void setLocation(String location) {
     this.location=location;
     }
     public void setNumOfInvitees(int numOfInvitees)
