@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class PackageManager {
 
@@ -26,19 +27,60 @@ public class PackageManager {
         return "package not found";
     }
 
-    public String updatePackage(int packageId, Packege updatedPackage) {
+    public String updatePackage(int id) {
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for input
+        boolean updated = false;
+
         for (Packege pkg : packages) {
-            if (pkg.getId() == packageId) {
-                pkg.setPrice(updatedPackage.getPrice());
-                pkg.setCapacity(updatedPackage.getCapacity());
-                pkg.setLocation(updatedPackage.getLocation());
-                pkg.setPlace_name(updatedPackage.getPlace_name());
-                pkg.setServices_des(updatedPackage.getServices_des());
-                pkg.setServiceProvider_name(updatedPackage.getServicesProvider_name());
-                return "package updated successfully";
+            if (pkg.getId() == id) {
+                while (true) {
+                    System.out.println("Enter the type you want to modify");
+                    System.out.println("1. price\n2. capacity\n3. location\n4. place name" +
+                            "\n5. services\n6. service provider name\n7. exit");
+
+                    int key = Integer.parseInt(scanner.nextLine()); // Read the choice as an integer
+
+                    if (key == 7) {
+                        break; // Exit the loop
+                    }
+
+                    System.out.println("Enter the new value:");
+                    String newValue = scanner.nextLine(); // Read the new value from user
+
+                    switch (key) {
+                        case 1:
+                            pkg.setPrice(Integer.parseInt(newValue));
+                            updated = true;
+                            break;
+                        case 2:
+                            pkg.setCapacity(Integer.parseInt(newValue));
+                            updated = true;
+                            break;
+                        case 3:
+                            pkg.setLocation(newValue);
+                            updated = true;
+                            break;
+                        case 4:
+                            pkg.setPlace_name(newValue);
+                            updated = true;
+                            break;
+                        case 5:
+                            pkg.setServices_des(newValue);
+                            updated = true;
+                            break;
+                        case 6:
+                            pkg.setServiceProvider_name(newValue);
+                            updated = true;
+                            break;
+                        default:
+                            System.out.println("Invalid option. Please try again.");
+                            break;
+                    }
+                }
+                return updated ? "Package updated successfully." : "No updates made.";
             }
         }
-        return "package not found";
+        return "Package not found.";
     }
 
 
@@ -49,8 +91,7 @@ public class PackageManager {
                 return pkg;
             }
         }
-        return null; // or throw an exception depending on your error handling strategy
+        return null;
     }
-
 
 }
