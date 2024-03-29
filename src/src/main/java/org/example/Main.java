@@ -9,7 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
@@ -23,7 +22,6 @@ public class Main {
         System.out.println("Enter Number 1/2/3 \n");
         Scanner s = new Scanner(System.in);
         int Choose = s.findInLine(".").charAt(0);
-
 
 
         if(Choose == 1){

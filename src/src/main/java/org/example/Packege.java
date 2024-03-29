@@ -39,13 +39,13 @@ public int getCapacity(){
 public String getLocation(){
         return this.location;
 }
-public String getPlace_name(){
+public String getPlaceName(){
         return this.placeName;
 }
-public String getServicesProvider_name(){
+public String getServicesProviderName(){
         return this.serviceProviderName;
 }
-public String getServices_des(){
+public String getServicesDes(){
         return this.servicesDes;
 }
 public void setId(int id){
@@ -60,13 +60,13 @@ public void setCapacity(int capacity){
 public void setLocation(String location){
         this.location=location;
 }
-public void setPlace_name(String placeName){
+public void setPlaceName(String placeName){
         this.placeName=placeName;
 }
-public void setServices_des(String servicesDes){
+public void setServicesDes(String servicesDes){
         this.servicesDes=servicesDes;
 }
-public void setServiceProvider_name(String serviceProviderName){
+public void setServiceProviderName(String serviceProviderName){
         this.serviceProviderName=serviceProviderName;
 }
 }

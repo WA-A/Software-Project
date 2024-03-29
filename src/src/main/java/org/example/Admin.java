@@ -12,7 +12,10 @@ public class Admin {
         password=null;
         isLogged=false;
     }
-public void setUsername(String username){
+
+
+
+    public void setUsername(String username){
         this.username=username;
 }
 
@@ -60,8 +63,8 @@ public void setUsername(String username){
         }
     }
     public void printUsers(){
+        String space="     ";
         for (User u:Application.users){
-            String space="     ";
             logger.info("Username: "+u.getUsername()+space+"PhoneNumber: "+u.getPhoneNum()+space+"Email: "+u.getEmail());
         }
     }

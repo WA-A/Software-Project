@@ -4,6 +4,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Application {
@@ -13,6 +14,7 @@ protected static final List<User> users =new ArrayList<>();
  protected static final List<Packege> packeges =new ArrayList<>();
 protected static final List<Event> events=new ArrayList<>();
  protected static final List<Calender> calenders=new ArrayList<>();
+ protected static final List<Message> messages=new ArrayList<>();
  private static final Logger logger = Logger.getLogger(Application.class.getName());
 
 Application(){
@@ -65,44 +67,44 @@ Application(){
  users.add(u3);
  Packege p1=new Packege();
  p1.setId(1);
- p1.setServiceProvider_name(s1.getUsername());
+ p1.setServiceProviderName(s1.getUsername());
  p1.setLocation("Nablus");
  p1.setCapacity(200);
- p1.setPlace_name("Moon sign");
+ p1.setPlaceName("Moon sign");
  p1.setPrice(2500);
- p1.setServices_des("video conferencing technology,simultaneous translation service");
+ p1.setServicesDes("video conferencing technology,simultaneous translation service");
  Packege p2=new Packege();
  p2.setId(2);
- p2.setServiceProvider_name(s2.getUsername());
+ p2.setServiceProviderName(s2.getUsername());
  p2.setLocation("Ramallah");
  p2.setCapacity(300);
  p2.setPrice(3500);
- p2.setPlace_name("Golden tree");
- p2.setServices_des("video conferencing technology,simultaneous translation service,providing a logistics center");
+ p2.setPlaceName("Golden tree");
+ p2.setServicesDes("video conferencing technology,simultaneous translation service,providing a logistics center");
  Packege p3=new Packege();
  p3.setId(3);
- p3.setServiceProvider_name(s3.getUsername());
- p3.setPlace_name("Al-andalos");
+ p3.setServiceProviderName(s3.getUsername());
+ p3.setPlaceName("Al-andalos");
  p3.setCapacity(400);
  p3.setLocation("Tulkarim");
  p3.setPrice(5550);
- p3.setServices_des("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services");
+ p3.setServicesDes("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services");
  Packege p4=new Packege();
  p4.setId(4);
- p4.setServiceProvider_name(s2.getUsername());
+ p4.setServiceProviderName(s2.getUsername());
  p4.setLocation("Jenin");
  p4.setCapacity(550);
  p4.setPrice(6000);
- p4.setPlace_name("5 stars");
- p4.setServices_des("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services");
+ p4.setPlaceName("5 stars");
+ p4.setServicesDes("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services");
  Packege p5=new Packege();
  p5.setId(5);
- p5.setServiceProvider_name(s3.getUsername());
+ p5.setServiceProviderName(s3.getUsername());
  p5.setLocation("Jerico");
  p5.setCapacity(130);
  p5.setPrice(7000);
- p5.setPlace_name("Rozana");
- p5.setServices_des("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services,food and drinks,meet and greet service for participants");
+ p5.setPlaceName("Rozana");
+ p5.setServicesDes("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services,food and drinks,meet and greet service for participants");
  packeges.add(p1);
  packeges.add(p2);
  packeges.add(p3);
@@ -112,7 +114,7 @@ Application(){
  e1.setPackegeId(p1.getId());
  e1.setEventTitle("Event 1");
  e1.setUserName(u1.getUsername());
- e1.setServiceProviderName(p1.getServicesProvider_name());
+ e1.setServiceProviderName(p1.getServicesProviderName());
  e1.setLocation(p1.getLocation());
  e1.setNumOfInvitees(170);
  e1.setDate("10/12/2022");
@@ -122,7 +124,7 @@ Application(){
  e2.setPackegeId(p2.getId());
  e2.setEventTitle("Event 2");
  e2.setUserName(u2.getUsername());
- e2.setServiceProviderName(p2.getServicesProvider_name());
+ e2.setServiceProviderName(p2.getServicesProviderName());
  e2.setLocation(p2.getLocation());
  e2.setNumOfInvitees(300);
  e2.setDate("20/9/2023");
@@ -132,7 +134,7 @@ Application(){
  e3.setPackegeId(p3.getId());
  e3.setEventTitle("Event 3");
  e3.setUserName(u3.getUsername());
- e3.setServiceProviderName(p3.getServicesProvider_name());
+ e3.setServiceProviderName(p3.getServicesProviderName());
  e3.setLocation(p3.getLocation());
  e3.setNumOfInvitees(320);
  e3.setDate("9/8/2023");
@@ -142,7 +144,7 @@ Application(){
  e4.setPackegeId(p2.getId());
  e4.setEventTitle("Event 4");
  e4.setUserName(u2.getUsername());
- e4.setServiceProviderName(p2.getServicesProvider_name());
+ e4.setServiceProviderName(p2.getServicesProviderName());
  e4.setLocation(p2.getLocation());
  e4.setNumOfInvitees(250);
  e4.setDate("10/5/2024");
@@ -152,7 +154,7 @@ Application(){
  e5.setPackegeId(p1.getId());
  e5.setEventTitle("Event 4");
  e5.setUserName(u1.getUsername());
- e5.setServiceProviderName(p1.getServicesProvider_name());
+ e5.setServiceProviderName(p1.getServicesProviderName());
  e5.setLocation(p1.getLocation());
  e5.setNumOfInvitees(100);
  e5.setDate("1/4/2024");
@@ -169,29 +171,34 @@ Application(){
  c1.setStartAt(e1.getStartAt());
  c1.setEndAt(e1.getEndAt());
  c1.setServiceProviderName(e1.getServiceProviderName());
+ c1.setPackegeId(e1.getPackegeId());
  Calender c2=new Calender();
  c2.setEventTitle(e2.getEventTitle());
  c2.setDate(e2.getDate());
  c2.setStartAt(e2.getStartAt());
  c2.setEndAt(e2.getEndAt());
+ c2.setPackegeId(e2.getPackegeId());
  c2.setServiceProviderName(e2.getServiceProviderName());
  Calender c3=new Calender();
  c3.setEventTitle(e3.getEventTitle());
  c3.setDate(e3.getDate());
  c3.setStartAt(e3.getStartAt());
  c3.setEndAt(e3.getEndAt());
+ c3.setPackegeId(e3.getPackegeId());
  c3.setServiceProviderName(e3.getServiceProviderName());
 Calender c4=new Calender();
 c4.setEventTitle(e4.getEventTitle());
 c4.setDate(e4.getDate());
 c4.setStartAt(e4.getStartAt());
 c4.setEndAt(e4.getEndAt());
+c4.setPackegeId(e4.getPackegeId());
 c4.setServiceProviderName(e4.getServiceProviderName());
 Calender c5=new Calender();
 c5.setEventTitle(e5.getEventTitle());
 c5.setDate(e5.getDate());
 c5.setStartAt(e5.getStartAt());
 c5.setEndAt(e5.getEndAt());
+c5.setPackegeId(e5.getPackegeId());
 c5.setServiceProviderName(e5.getServiceProviderName());
 calenders.add(c1);
 calenders.add(c2);
@@ -236,6 +243,31 @@ public ServiceProvider checkServiceProvider(String username,String password){
   logger.info("The User is not found");
   return null;
  }
+ public static final void sendMessage(String message, String serviceProviderName) {
+  Message s=new Message();
+  s.setMessage(message);
+  s.setServiceProviderName(serviceProviderName);
+  messages.add(s);
+ }
+ public String registerUser(){
+  Scanner scanner = new Scanner(System.in);
+ User u=new User();
+logger.info("Enter your name: ");
+ String userName=scanner.next();
+ u.setUsername(userName);
+  logger.info("Enter your password: ");
+  String password= scanner.next();
+ u.setPassword(password);
+  logger.info("Enter your email: ");
+  String email= scanner.next();
+ u.setEmail(email);
+  logger.info("Enter your phone-number: ");
+  String phoneNumber= scanner.next();
+ u.setPhoneNum(phoneNumber);
+ u.setLogged(true);
+ return "The user is registerd Successfully";
+ }
+
 }
 
 
