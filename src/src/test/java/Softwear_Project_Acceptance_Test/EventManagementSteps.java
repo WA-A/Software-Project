@@ -8,7 +8,9 @@ public class EventManagementSteps {
     @When("The organizer creates an event with title {string}, date {string}, and location {string}")
     public void the_organizer_creates_an_event_with_title_date_and_location(String title, String date, String location) {
         // Write code here to create the event
+String s=u.creat();
         throw new io.cucumber.java.PendingException();
+        s
     }
 
     @Then("The event should be created successfully {string}")

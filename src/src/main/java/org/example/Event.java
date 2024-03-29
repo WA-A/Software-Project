@@ -11,6 +11,7 @@ public class Event {
  private String serviceProviderName;
  private String userName;
 
+
 public Event(){
     this.packegeId=0;
     this.eventTitle= null;
@@ -78,6 +79,8 @@ public Event(){
     public void setStartAt(String startAt){
         this.startAt=startAt;
     }
+
+
 }
 
 

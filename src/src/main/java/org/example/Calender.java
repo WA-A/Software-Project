@@ -2,6 +2,7 @@ package org.example;
 
 public class Calender {
     private String serviceProviderName;
+    private int packegeId;
     private String date;
     private String startAt;
     private String endAt;
@@ -32,6 +33,12 @@ public class Calender {
 
     public void setEventTitle(String eventTitle) {
         this.eventTitle = eventTitle;
+    }
+    public int getPackegeId(){
+        return this.packegeId;
+    }
+    public void setPackegeId(int id){
+        this.packegeId=id;
     }
 
     public String getEndAt(){
