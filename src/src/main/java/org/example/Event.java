@@ -11,6 +11,7 @@ public class Event {
  private String serviceProviderName;
  private String userName;
 
+
 public Event(){
     this.packegeId=0;
     this.eventTitle= null;
@@ -32,7 +33,7 @@ public Event(){
     public void setPackegeId(int packegeId) {
         this.packegeId=packegeId;
     }
-    public void setocation(String location) {
+    public void setLocation(String location) {
     this.location=location;
     }
     public void setNumOfInvitees(int numOfInvitees)
@@ -78,6 +79,8 @@ public Event(){
     public void setStartAt(String startAt){
         this.startAt=startAt;
     }
+
+
 }
 
 
