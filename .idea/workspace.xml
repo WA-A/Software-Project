@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying">
-      <change afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/AddDeleteUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/AdminManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Calender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/EventManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/PackageManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Packege.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Packege.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/yazan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/EventManagementSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/EventManagementSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/PlaceManageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/PlaceManageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java" afterDir="false" />
+ beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +37,6 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="18" />
-        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -63,7 +45,8 @@
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
-}</component>
+}
+  </component>
   <component name="ProjectId" id="2dBDeZ1wtWElXAmdsDs4hmo68iG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,20 +55,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Batool&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.example" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: addNewPackege">
     <configuration name="Feature: addNewPackege" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/addNewPackege.feature" />
@@ -433,8 +402,8 @@
     <MESSAGE value="eight commit" />
     <MESSAGE value="hello all" />
     <MESSAGE value="hello" />
-    <MESSAGE value="test" />
     <MESSAGE value="trying" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
