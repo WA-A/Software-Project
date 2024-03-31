@@ -76,98 +76,116 @@ public void setPhoneNum(String phoneNum){
         return "package not found" ;
     }
 
-    public String updatePackage(int id) {
-        Scanner scanner = new Scanner(System.in); // Create a Scanner object for input
+    public String updatePackage(int id, int updateType, String newValue) {
         boolean updated = false;
 
         for (Packege pkg : Application.packeges) {
             if (pkg.getId() == id) {
-                updated = updateAttributes(pkg, scanner);
+                switch (updateType) {
+                    case 1:
+                        updatePrice(pkg, newValue);
+                        updated = true;
+                        break;
+                    case 2:
+                        updateCapacity(pkg, newValue);
+                        updated = true;
+                        break;
+                    case 3:
+                        updateLocation(pkg, newValue);
+                        updated = true;
+                        break;
+                    case 4:
+                        updatePlaceName(pkg, newValue);
+                        updated = true;
+                        break;
+                    case 5:
+                        updateServicesDes(pkg, newValue);
+                        updated = true;
+                        break;
+                    case 6:
+                        updateServiceProviderName(pkg, newValue);
+                        updated = true;
+                        break;
+                    default:
+                        LOGGER.warning("Invalid option. Please try again.");
+                        return "Invalid update option provided.";
+                }
                 return updated ? "Package updated successfully." : "No updates made.";
             }
         }
         return "Package not found.";
     }
 
-    private boolean updateAttributes(Packege pkg, Scanner scanner) {
-        while (true) {
-            LOGGER.info("Enter the type you want to modify");
-            LOGGER.info("""
-             1. price
-             2. capacity
-             3. location
-             4. place name
-             5. services
-             6. service provider name
-             7. exit
-             """);
+    private void updatePrice(Packege pkg, String newValue) {
+        pkg.setPrice(Integer.parseInt(newValue));
 
-
-            int key = Integer.parseInt(scanner.nextLine()); // Read the choice as an integer
-
-            if (key == 7) {
-                break; // Exit the loop
-            }
-
-            LOGGER.info("Enter the new value:");
-            String newValue = scanner.nextLine(); // Read the new value from user
-
-            switch (key) {
-                case 1:
-                    pkg.setPrice(Integer.parseInt(newValue));
-                    return true;
-                case 2:
-                    pkg.setCapacity(Integer.parseInt(newValue));
-                    return true;
-                case 3:
-                    pkg.setLocation(newValue);
-                    return true;
-                case 4:
-                    pkg.setPlaceName(newValue);
-                    return true;
-                case 5:
-                    pkg.setServicesDes(newValue);
-                    return true;
-                case 6:
-                    pkg.setServiceProviderName(newValue);
-                    return true;
-                default:
-                    LOGGER.warning("Invalid option. Please try again.");
-                    break;
-            }
-        }
-        return false;
     }
-public void showMyPackeges(String username){
+
+    private void updateCapacity(Packege pkg, String newValue) {
+        pkg.setCapacity(Integer.parseInt(newValue));
+
+    }
+
+    private void updateLocation(Packege pkg, String newValue) {
+        pkg.setLocation(newValue);
+
+    }
+
+    private String updatePlaceName(Packege pkg, String newValue) {
+        pkg.setPlaceName(newValue);
+        return "Place name updated successfully";
+    }
+
+    private void updateServicesDes(Packege pkg, String newValue) {
+        pkg.setServicesDes(newValue);
+
+    }
+
+    private void updateServiceProviderName(Packege pkg, String newValue) {
+        pkg.setServiceProviderName(newValue);
+
+    }
+
+
+public String showMyPackeges(String username){
     List<Packege> pack=new ArrayList<>();
+    boolean flage= false;
     String space="    ";
     for(Packege p:Application.packeges){
         if(p.getServicesProviderName().equals(username)){
+            flage=true;
             pack.add(p);
         }
     }
     for(Packege p: pack){
         LOGGER.info("Packege Id: "+p.getId()+space+"Place Name: "+p.getPlaceName()+space+"Location: "+p.getLocation()+space+"Capacity: "+p.getCapacity()+space+"Packege Price: "+p.getPrice()+space+"Services: "+p.getServicesDes()+space+"Service Provider: "+p.getServicesProviderName());
     }
+    return flage?"There are packages":"No packages found";
 }
-public void showMyTasks(String username){
+public String showMyTasks(String username){
+    boolean flage= false;
     List<Calender> cal=new ArrayList<>();
     String space="    ";
     for(Calender c:Application.calenders){
         if(c.getServiceProviderName().equals(username)){
+            flage=true;
             cal.add(c);
         }
     }
     for(Calender c: cal){
         LOGGER.info("Event Title: "+c.getEventTitle()+space+"Date: "+c.getDate()+space+"Start At: "+c.getStartAt()+space+"End At: "+c.getEndAt()+space+"Packege Id: "+c.getPackegeId());
     }
+    return flage?"There are tasks":"No tasks found";
 }
-public void showMessages(String servceProviderName){
+public String showMessages(String servceProviderName){
+    boolean flage= false;
     for(Message m:Application.messages){
         if(m.getServiceProviderName().equals(servceProviderName)) {
+            flage=true;
             LOGGER.info(m.getMessage());
         }
     }
+    return flage?"There are massages":"No massages found";
 }
 
 }

@@ -17,7 +17,7 @@ protected static final List<Event> events=new ArrayList<>();
  protected static final List<Message> messages=new ArrayList<>();
  private static final Logger logger = Logger.getLogger(Application.class.getName());
 
-Application(){
+public Application(){
  Admin a1=new Admin();
  a1.setUsername("wasan");
  a1.setPassword("123456");
@@ -266,6 +266,16 @@ logger.info("Enter your name: ");
  u.setPhoneNum(phoneNumber);
  u.setLogged(true);
  return "The user is registerd Successfully";
+ }
+
+
+ public Packege getPackageById(int id) {
+  for (Packege pkg : packeges) {
+   if (pkg.getId() == id) {
+    return pkg;
+   }
+  }
+  return null;
  }
 
 }
