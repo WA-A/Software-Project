@@ -4,7 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="Test Cases" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +17,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Yazan" />
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -54,17 +53,6 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Cucumber Java.Feature: LoginAdmin.executor": "Run",
-    "Cucumber Java.Feature: LoginServerProvider.executor": "Run",
-    "Cucumber Java.Feature: LoginUser.executor": "Run",
-    "Cucumber Java.Feature: RegisterUser.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Wasan",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -416,13 +404,13 @@
       <option name="project" value="LOCAL" />
       <updated>1711589223872</updated>
     </task>
-    <task id="LOCAL-00031" summary="Test Cases">
+    <task id="LOCAL؜-٠٠٠٣١" summary="trying">
       <option name="closed" value="true" />
-      <created>1711921374283</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1711921374283</updated>
+      <created>1711920300765</created>
+      <option name="number" value="٠٠٠٣١" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣١" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1711920300765</updated>
     </task>
     <option name="localTasksCounter" value="32" />
     <servers />
@@ -454,7 +442,6 @@
     <MESSAGE value="hello" />
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
-    <MESSAGE value="Test Cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
