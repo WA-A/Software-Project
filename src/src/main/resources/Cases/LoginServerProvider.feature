@@ -10,8 +10,8 @@ Feature: service Provider Login
     Then The serviceProvider should be logged in successfully in <message>
 
     Examples:
-      | Username                | Password             | message                                  |
-      | Wasan                   | 1832002              |The Service Provider is found    Successfully Login  |
+      | Username                   | Password             | message                                             |
+      | mohammad                   | 123123               |The Service Provider is found    Successfully Login  |
 
 
 
@@ -23,8 +23,8 @@ Feature: service Provider Login
     Then The service Provider should see an error message indicating incorrect password in <message>
 
     Examples:
-      | Username                | Password             | message                                       |
-      | Wasan                   | wrongPassword        | The Service Provider is not found    incorrect password  |
+      | Username                | Password      | message                                                  |
+      | mohammad                | wrongPassword        | The Service Provider is not found    incorrect password  |
 
   Scenario Outline: Unsuccessful ServerProvider Login with Nonexistent Username
     Given The Server Provider is on the login page
@@ -34,8 +34,8 @@ Feature: service Provider Login
     Then The service Provider should see an error message indicating invalid username in <message>
 
     Examples:
-      | Username                | Password             | message                                    |
-      | nonexistent Admin-User  | 1832002              |The Service Provider is not found    invalid username  |
+      | Username                | Password             | message                                               |
+      | nonexistent Admin-User  | 123123              |The Service Provider is not found    invalid username  |
 
 
   Scenario Outline: ServerProvider Attempts to Login Without Entering Password
@@ -46,8 +46,8 @@ Feature: service Provider Login
     Then The service Provider should see an error message indicating incorrect password in <message>
 
     Examples:
-      | Username                | Password          | message                                       |
-      | Wasan                   |                   |The Service Provider is not found    password is required |
+      | Username                | Password          | message                                                  |
+      | mohammad                |                   |The Service Provider is not found    password is required |
 
   Scenario Outline: ServerProvider Attempts to Login Without Entering Username
     Given The Server Provider is on the login page
@@ -59,4 +59,4 @@ Feature: service Provider Login
 
     Examples:
       | Username                | Password             | message                                       |
-      |                         | 1832002              |The Service Provider is not found    username is required |
+      |                         | 123123              |The Service Provider is not found    username is required |

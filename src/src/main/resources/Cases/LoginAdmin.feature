@@ -11,7 +11,7 @@ Feature: Admin Login
 
     Examples:
       | Username                | Password             | message                                  |
-      | Wasan                   | 1832002              |The admin is found    Successfully Login  |
+      | wasan                   | 123456               |The admin is found    Successfully Login  |
 
 
 
@@ -24,7 +24,7 @@ Feature: Admin Login
 
     Examples:
       | Username                | Password             | message                                       |
-      | Wasan                   | wrongPassword        | The admin is not found    incorrect password  |
+      | wasan                   | wrongPassword        | The admin is not found    incorrect password  |
 
   Scenario Outline: Unsuccessful Admin Login with Nonexistent Username
     Given The admin is on the login page
@@ -35,7 +35,7 @@ Feature: Admin Login
 
     Examples:
       | Username                | Password             | message                                    |
-      | nonexistent Admin-User  | 1832002              |The admin is not found    invalid username  |
+      | nonexistent Admin-User  | 123456              |The admin is not found    invalid username  |
 
 
   Scenario Outline: Admin Attempts to Login Without Entering Password
@@ -47,7 +47,7 @@ Feature: Admin Login
 
     Examples:
       | Username                | Password               | message                                       |
-      | Wasan                   |                      |The admin is not found    password is required |
+      | wasan                   |                      |The admin is not found    password is required |
 
   Scenario Outline: Admin Attempts to Login Without Entering Username
     Given The admin is on the login page
@@ -59,4 +59,4 @@ Feature: Admin Login
 
     Examples:
       | Username                | Password             | message                                       |
-      |                         | 1832002              |The admin is not found    username is required |
+      |                         | 123456               |The admin is not found    username is required |
