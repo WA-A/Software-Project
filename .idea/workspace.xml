@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying" />
+    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying">
+
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,33 +55,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Cucumber Java.Feature: newAdmin.executor": "Run",
-    "Cucumber Java.Feature: newServiceProviderManagementn.executor": "Run",
-    "Cucumber Java.Feature: newUser.executor": "Run",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.AdminTest.the_admin_is_logged_in.executor": "Run",
-    "JUnit.AdminTest.the_service_provider_with_username_should_be_added_to_the_system.executor": "Run",
-    "JUnit.StepDefinitions.a_service_provider_adds_a_new_package_with_id_price_capacity_location_place_name_servisec_and_service_provider_name.executor": "Run",
-    "JUnit.StepDefinitions.executor": "Run",
-    "JUnit.StepDefinitions.the_new_package_added_to_the_system.executor": "Run",
-    "JUnit.StepDefinitions.the_service_provider_is_logged_in.executor": "Run",
-    "JUnit.StepDefinitions.the_system_should_display_a_message.executor": "Run",
-    "JUnit.StepDefinitions.the_system_should_not_remove_any_package.executor": "Run",
-    "JUnit.StepDefinitions.the_system_should_remove_the_package.executor": "Run",
-    "JUnit.StepDefinitions.the_system_should_update_the_package_s_price_to.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "JUnit.UserTest.the_user_should_be_successfully_registered.executor": "Run",
-    "JUnit.UserTest.user_attempts_to_create_an_event.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Yazan",
-    "kotlin-language-version-configured": "true"
-  }
-}]]></component>
+
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
