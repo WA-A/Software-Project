@@ -1,27 +1,24 @@
 Feature: User Management and Event Handling
 
-  Scenario: User registration with valid details
-    Given no user is currently registered with username "yazan"
-    When "yazan" registers with password "yazan123", email "yazan@example.com", and phone number "123456"
-    Then the user "yazan" should be successfully registered
 
-  Scenario: User login with correct credentials
-    Given "yazan" is a registered user
-    When "yazan" logs in with password "yazan123"
-    Then "yazan" should be successfully logged in
+  Scenario: Successfully Creating an Event
+    Given the user wants to create an event with specific details
+    When the user provides event details including "Meeting 1", a budget of 6000, "Nablus" location, 250 invitees, "2024-04-20" date, "18:00" start time, and "22:00" end time
+    Then the system processes these details and the system prints a list of suitable packages based on the provided criteria
 
-  Scenario: Creating an event with all valid details
-    Given user is logged in
-    And user has specified a budget of 3000, location "City Park", number of invitees 50, date "2024-06-15", and start time "14"
-    When user attempts to create an event "Spring Gala"
-    Then the event "Spring Gala" should be successfully created
-    And user should receive a confirmation with the event details
+
+  Scenario: Choosing a Package for the Event
+    Given the user has already created an event and received a list of suitable packages
+    When the user selects a package by its Id 1
+    Then the system assigns the selected package to the event
+
 
   Scenario: Creating an event with a budget too low for available packages
     Given user is logged in
     And "yazan" specifies a budget of 100
     When "yazan" attempts to create an event "Budget Meeting"
     Then the creation should fail with a budget error
+
 
   Scenario: Creating an event with an invalid location
     Given user is logged in
