@@ -14,6 +14,7 @@ public class User{
     private String phoneNum;
     private boolean isLogged;
     private static final Logger LOGGER = Logger.getLogger(User.class.getName());
+    private String localName;
 
 
 
