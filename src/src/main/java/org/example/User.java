@@ -14,7 +14,8 @@ public class User{
     private String phoneNum;
     private boolean isLogged;
     private static final Logger LOGGER = Logger.getLogger(User.class.getName());
-    private String localName;
+    private static final List<Packege> packegesAfterFilter = new ArrayList<>();
+    private static final List<Event> currentEvent= new ArrayList<>();
 
 
 
@@ -61,89 +62,79 @@ public String getEmail(){
 public String getPhoneNum(){
     return this.phoneNum;
 }
-    public String creatEvent(String userName){
-        String serviceProviderName=null;
-        int packegeId;
-        Scanner scanner = new Scanner(System.in);
-        LOGGER.info("Please enter the Event Title: ");
-        String eventTitle = scanner.next();
-        LOGGER.info("Please enter the budget: ");
-        int budget = Integer.parseInt(scanner.nextLine());
+    public String creatEvent(String eventT,int b,String loc,int numInvite,String d,String startTime,String endTime){
+        String eventTitle=eventT;
+        int budget = b;
         List<Packege> packAfterBud= filterByBudget(budget);
         if(packAfterBud.isEmpty()){
             return "We do not have a package with the same or lower budget than you entered";
         }
-        LOGGER.info("Please enter the location: ");
-        String location= scanner.next();
+        String location=loc;
         List<Packege> packAfterLoc=filterByLocation(packAfterBud,location);
         if(packAfterLoc.isEmpty()){
             return "We do not have a package with the same or lower budget than you enterd and the same location";
         }
-        LOGGER.info("Please enter the Num of Invitees: ");
-        int numInvitees= Integer.parseInt(scanner.next());
+         int numInvitees=numInvite;
         List<Packege> packAfterCapacity=filterByCapacity(packAfterLoc,numInvitees);
         if(packAfterCapacity.isEmpty()){
             return "We do not have a package with the same or lower budget than you enterd and the same location,Capacity";
         }
-        LOGGER.info("Please enter the Date: ");
-        String date=scanner.next();
+       String date=d;
         List<Packege> packAfterDate=filterByDate(packAfterCapacity,date);
         if(packAfterDate.isEmpty()){
             return "We do not have a package with the same or lower budget than you enterd and the same location,capacity,date";
         }
-        LOGGER.info("Please enter the Time when the event start: ");
-        String startAt=scanner.next();
-        LOGGER.info("Please enter the Time when the event end: ");
-        String endAt = scanner.next();
-        List<Packege> packAfterStartTime= filterByStartTime(packAfterDate,startAt);
-        if(packAfterStartTime.isEmpty()){
+        String startAt=startTime;
+        String endAt=endTime;
+        List<Packege> packAfterTime= filterByStartTime(packAfterDate,startAt);
+        if(packAfterTime.isEmpty()){
             return "We do not have a package with the same or lower budget than you enterd and the same location,capacity,date";
         }
-        if(packAfterStartTime.size()>1){
-            String space="    ";
-            for (Packege p:packAfterStartTime){
-                LOGGER.info("Packege Id: "+p.getId()+space+"Place Name: "+p.getPlaceName()+space+"Location: "+p.getLocation()+space+"Capacity: "+p.getCapacity()+space+"Packege Price: "+p.getPrice()+space+"Services: "+p.getServicesDes()+space+"Service Provider: "+p.getServicesProviderName());
+        String space="    ";
+       for (Packege p: packAfterTime){
+           packegesAfterFilter.add(p);
+           LOGGER.info("Packege Id: "+p.getId()+space+"Place Name: "+p.getPlaceName()+space+"Location: "+p.getLocation()+space+"Capacity: "+p.getCapacity()+space+"Packege Price: "+p.getPrice()+space+"Services: "+p.getServicesDes()+space+"Service Provider: "+p.getServicesProviderName());
+       }
+Event e=new Event();
+       e.setEventTitle(eventTitle);
+       e.setUserName(this.getUsername());
+       e.setLocation(location);
+       e.setDate(date);
+       e.setNumOfInvitees(numInvitees);
+       e.setStartAt(startAt);
+       e.setEndAt(endAt);
+       currentEvent.add(e);
+   return "Please enter the Packege Id that you want to approve: ";
+    }
+    public String choosePackege(int packId){
+        int packegeId= packId;
+        String servicrPrividerName=null;
+        for (Packege p: packegesAfterFilter){
+            if(p.getId()==packegeId){
+                servicrPrividerName= p.getServicesProviderName();
             }
-            LOGGER.info("Enter the Packege Id that you choose: ");
-             packegeId= Integer.parseInt(scanner.next());
-            for(Packege p:Application.packeges){
-                if(p.getId()==packegeId){
-                     serviceProviderName = p.getServicesProviderName();
-                }
+            else{
+                return "Invalid Packege Id";
             }
-
         }
-        else{
-            Packege p = packAfterStartTime.get(0);
-             packegeId= p.getId();
-           serviceProviderName= p.getServicesProviderName();
-        }
-        Event e= new Event();
-        e.setEventTitle(eventTitle);
-        e.setDate(date);
-        e.setNumOfInvitees(numInvitees);
+        Event e = currentEvent.get(0);
         e.setPackegeId(packegeId);
-        e.setServiceProviderName(serviceProviderName);
-        e.setLocation(location);
-        e.setStartAt(startAt);
-        e.setEndAt(endAt);
-        e.setUserName(userName);
-        Application.events.add(e);
-        Calender c= new Calender();
-        c.setPackegeId(e.getPackegeId());
-        c.setEventTitle(e.getEventTitle());
-        c.setServiceProviderName(e.getServiceProviderName());
-        c.setDate(e.getDate());
-        c.setStartAt(e.getStartAt());
-        c.setEndAt(e.getEndAt());
-        Application.calenders.add(c);
-        Application.sendMessage("The event with title: "+eventTitle+" is added to your task",serviceProviderName);
+        e.setServiceProviderName(servicrPrividerName);
 
-        return "The event is created successfully";
+        Iterator<Event> iterator = currentEvent.iterator();
+        while (iterator.hasNext()) {
+
+            iterator.remove();
+        }
+        Iterator<Packege> i = packegesAfterFilter.iterator();
+        while (i.hasNext()) {
+
+            i.remove();
+        }
+        return "The event is created Successfully";
     }
 
-
-    public static final List<Packege> filterByStartTime(List<Packege> packAfterDate, String startAt) {
+    private List<Packege> filterByStartTime(List<Packege> packAfterDate, String startAt) {
         List<Packege> pack = new ArrayList<>(packAfterDate);
         Iterator<Packege> iterator = pack.iterator();
         LocalTime userTime = LocalTime.parse(startAt);
@@ -164,7 +155,7 @@ public String getPhoneNum(){
         return pack;
     }
 
-    public static final List<Packege> filterByDate(List<Packege> packAfterCapacity, String date) {
+    private List<Packege> filterByDate(List<Packege> packAfterCapacity, String date) {
         List<Packege> pack = new ArrayList<>(packAfterCapacity);
         Iterator<Packege> iterator = pack.iterator();
         while (iterator.hasNext()) {
@@ -180,7 +171,7 @@ public String getPhoneNum(){
         return pack;
     }
 
-    public static final List<Packege> filterByCapacity(List<Packege> packAfterLoc, int numInvitees) {
+    private  List<Packege> filterByCapacity(List<Packege> packAfterLoc, int numInvitees) {
         List<Packege> pack=new ArrayList<>();
         for(Packege p :packAfterLoc){
             if(p.getCapacity() >= numInvitees){
@@ -190,7 +181,7 @@ public String getPhoneNum(){
         return pack;
     }
 
-    public static final List<Packege> filterByLocation(List<Packege> packAfterBud, String location) {
+    private List<Packege> filterByLocation(List<Packege> packAfterBud, String location) {
     List<Packege> pack=new ArrayList<>();
     for(Packege p:packAfterBud){
         if(p.getLocation().equals(location)){
@@ -200,7 +191,7 @@ public String getPhoneNum(){
         return pack;
     }
 
-    public static final List<Packege> filterByBudget(int budget) {
+    public List<Packege> filterByBudget(int budget) {
         List<Packege> pack=new ArrayList<>();
         for(Packege p:Application.packeges){
             if(p.getPrice() <= budget){
@@ -237,6 +228,7 @@ public void deleteEvent(){
 
     LOGGER.info("The event is deleted succesfully");
 }
+
 
 
 }

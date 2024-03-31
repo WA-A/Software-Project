@@ -194,7 +194,7 @@ public class StepDefinitions {
     public void the_system_should_display_all_messages_for() {
 
         response=serviceProvider.showMessages("abdullah");
-        assertEquals("No massages found",response);
+        assertEquals("No massages found g",response);
     }
 
 

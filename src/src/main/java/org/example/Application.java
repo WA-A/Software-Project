@@ -86,7 +86,7 @@ public Application(){
  p3.setServiceProviderName(s3.getUsername());
  p3.setPlaceName("Al-andalos");
  p3.setCapacity(400);
- p3.setLocation("Tulkarim");
+ p3.setLocation("Nablus");
  p3.setPrice(5550);
  p3.setServicesDes("video conferencing technology,simultaneous translation service,providing a logistics center,registration and documentation services");
  Packege p4=new Packege();
