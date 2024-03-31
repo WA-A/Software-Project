@@ -10,7 +10,7 @@ Feature: User Login
 
     Examples:
       | Username                | Password          | message                                   |
-      |  Ghina                  | 1142018           | The User is not found   Successful Login  |
+      |  sameh                  | 223344            | The User is not found   Successful Login  |
 
   Scenario Outline: Unsuccessful User Login with Incorrect Password
     Given The user is on the login page
@@ -21,7 +21,7 @@ Feature: User Login
 
     Examples:
     | Username                | Password          | message                                      |
-    |  Ghina                  | WorngPassword     | The User is not found   incorrect password   |
+    |  sameh                  | WorngPassword     | The User is not found   incorrect password   |
 
 
   Scenario Outline: Unsuccessful User Login with Nonexistent Username
@@ -33,7 +33,7 @@ Feature: User Login
 
     Examples:
       | Username                | Password          | message                                     |
-      | nonexistent User Name   | 1142018           | The User is not found   invalid username    |
+      | nonexistent User Name   | 223344           | The User is not found   invalid username    |
 
   Scenario Outline: User Attempts to Login Without Entering Password
     Given the user is on the login page
@@ -45,7 +45,7 @@ Feature: User Login
 
     Examples:
       | Username                | Password         | message                                     |
-      | Ghina                   |                  |The User is not found   password is required |
+      | sameh                   |                  |The User is not found   password is required |
 
 
   Scenario Outline: User Attempts to Login Without Entering Username
@@ -56,8 +56,8 @@ Feature: User Login
     Then the user should see an error message indicating the username is required in <message>
 
 Examples:
-  | Username               | Password          | message                                      |
-  |                         | 1142018          |The User is not found   username is required  |
+  | Username                | Password         | message                                      |
+  |                         | 223344          |The User is not found   username is required  |
 
 
 

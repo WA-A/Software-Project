@@ -3,25 +3,23 @@ Feature: User Registration
   @scenario1
   Scenario Outline: Successful User Registration
     Given The user is on the registration page
-    When The user enters <E-mail> , <Password> , <Phone> , <User-Name>  # Email is unique
-    Then I should E-mail and Password is valid
+    When The user enters <Username>,  <Password> ,<Email>  , <PhoneNum>   # Email is unique
+    Then I should Email and Password is valid
 
     Examples:
-   | E-mail              | Password  | Phone   | User-Name
-   | Misk2023@gmail.com  | 2262023   | 0987654 | Misk
-   | Ghina2018@gmail.com | 1142018   | 0123487 | Ghina
+    |Username  | Email              | Password  | PhoneNum   |
+    | sameh    |sameh@gmail.com     | 223344    |0598553051  |
 
 
 
   @scenario2
   Scenario Outline: Attempting to Register with Existing E-mail
     Given The user is on the registration page
-    When The user enters an existing <E-mail> ,a valid  password <Password>, phone <Phone> and user name <User-Name>
+    When The user enters an existing <Email> ,a valid  password <Password>, phone <PhoneNum> and user name <Username>
     Then The user should see an error message indicating the Email is already taken
 
     Examples:
-    | E-mail              | Password  | Phone   | User-Name
-    | Abood2019@gmail.com | 2552019   |0943178  | Abood
-    | Ghina2018@gmail.com | 1142018   | 0123487 | Ghina
+      |Username  | Email              | Password  | PhoneNum   |
+      | sameh    |sameh@gmail.com     | 223344    |0598553051  |
 
 
