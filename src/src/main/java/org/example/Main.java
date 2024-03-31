@@ -87,7 +87,7 @@ public class Main {
             }
 
             System.out.println("Wasan awwade" );
-            System.out.println("Wasan awwade" );
+            System.out.println("Wasan awwade wasaan" );
 
 
 
