@@ -34,7 +34,7 @@ public class Admin {
     public boolean getLogged(){
         return this.isLogged;
     }
-    public void addServiceProvider(String username,String password,String phoneNember,String email){
+    public String addServiceProvider(String username,String password,String phoneNember,String email){
         ServiceProvider s=new ServiceProvider();
         s.setUsername(username);
         s.setPassword(password);
@@ -42,6 +42,7 @@ public class Admin {
         s.setEmail(email);
         setLogged(false);
         Application.servicesProviders.add(s);
+        return "ServiceProvider added successfully";
     }
 
 
@@ -56,22 +57,26 @@ public class Admin {
         }
         return null;
     }
-    public void printServiceProviders(){
+    public String printServiceProviders(){
         String space="     ";
         for(ServiceProvider s: Application.servicesProviders){
+
             logger.info("Username: "+s.getUsername()+space+"PhoneNumber: "+s.getPhoneNum()+space+"Email: "+s.getEmail());
         }
+        return "All ServiceProvider has been printed";
     }
-    public void printUsers(){
+    public String printUsers(){
         String space="     ";
         for (User u:Application.users){
             logger.info("Username: "+u.getUsername()+space+"PhoneNumber: "+u.getPhoneNum()+space+"Email: "+u.getEmail());
         }
+        return "All users has been printed";
     }
-    public void printEvents(){
+    public String printEvents(){
         String space="   ";
         for(Event e:Application.events) {
             logger.info("Event Title: " + e.getEventTitle()+space +"Location: "+e.getLocation()+space+"Date: "+e.getDate()+space+"Start at: "+e.getStartAt()+space+"End at: "+e.getEndAt()+space+"Number of Invitees: "+e.getNumOfInvitees()+space+"User Name: "+e.getUserName()+space+"Packege Id: "+e.getPackegeId()+space+"Service Provider: "+e.getServiceProviderName());
         }
+        return "All events has been printed";
     }
     }
