@@ -71,7 +71,7 @@ public String getPhoneNum(){
         int budget = Integer.parseInt(scanner.nextLine());
         List<Packege> packAfterBud= filterByBudget(budget);
         if(packAfterBud.isEmpty()){
-            return "We do not have a package with the same or lower budget than you enterd";
+            return "We do not have a package with the same or lower budget than you entered";
         }
         LOGGER.info("Please enter the location: ");
         String location= scanner.next();
@@ -227,7 +227,6 @@ public void deleteEvent(){
         if(e.getEventTitle().equals(eventTitle)){
             Application.events.remove(e);
         }
-
     }
     for(Calender c:Application.calenders){
         if(c.getEventTitle().equals(eventTitle)){
