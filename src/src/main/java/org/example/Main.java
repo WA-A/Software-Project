@@ -430,7 +430,7 @@ public class Main {
         // Assuming package selection is needed after the initial event creation
         logger.info("Enter the package ID you want to approve: ");
         int packageId = scanner.nextInt();
-        String packageChoiceResult = user.choosePackage(packageId);
+        String packageChoiceResult = user.choosePackege(packageId);
         logger.info(packageChoiceResult); // Log the result of package selection
     }
 
