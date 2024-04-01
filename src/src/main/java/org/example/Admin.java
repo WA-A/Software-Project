@@ -57,26 +57,41 @@ public class Admin {
         }
         return null;
     }
-    public String printServiceProviders(){
-        String space="     ";
-        for(ServiceProvider s: Application.servicesProviders){
+    public String printServiceProviders() {
+        StringBuilder message = new StringBuilder();
+        String space = "     ";
+        for (ServiceProvider s : Application.servicesProviders) {
+            String providerInfo = String.format("Username: %s%sPhoneNumber: %s%sEmail: %s",
+                    s.getUsername(), space, s.getPhoneNum(), space, s.getEmail());
+            logger.info(providerInfo);
+            message.append(providerInfo).append("\n");
+        }
+        return "All Service Providers have been printed:\n" + message.toString();
+    }
 
-            logger.info("Username: "+s.getUsername()+space+"PhoneNumber: "+s.getPhoneNum()+space+"Email: "+s.getEmail());
+    public String printUsers() {
+        StringBuilder message = new StringBuilder();
+        String space = "     ";
+        for (User u : Application.users) {
+            String userInfo = String.format("Username: %s%sPhoneNumber: %s%sEmail: %s",
+                    u.getUsername(), space, u.getPhoneNum(), space, u.getEmail());
+            logger.info(userInfo);
+            message.append(userInfo).append("\n");
         }
-        return "All ServiceProvider has been printed";
+        return "All users have been printed:\n" + message.toString();
     }
-    public String printUsers(){
-        String space="     ";
-        for (User u:Application.users){
-            logger.info("Username: "+u.getUsername()+space+"PhoneNumber: "+u.getPhoneNum()+space+"Email: "+u.getEmail());
+
+    public String printEvents() {
+        StringBuilder message = new StringBuilder();
+        String space = "   ";
+        for (Event e : Application.events) {
+            String eventInfo = String.format("Event Title: %s%sLocation: %s%sDate: %s%sStart at: %s%sEnd at: %s%sNumber of Invitees: %d%sUser Name: %s%sPackege Id: %d%sService Provider: %s",
+                    e.getEventTitle(), space, e.getLocation(), space, e.getDate(), space, e.getStartAt(), space, e.getEndAt(), space,
+                    e.getNumOfInvitees(), space, e.getUserName(), space, e.getPackegeId(), space, e.getServiceProviderName());
+            logger.info(eventInfo);
+            message.append(eventInfo).append("\n");
         }
-        return "All users has been printed";
+        return "All events have been printed:\n" + message.toString();
     }
-    public String printEvents(){
-        String space="   ";
-        for(Event e:Application.events) {
-            logger.info("Event Title: " + e.getEventTitle()+space +"Location: "+e.getLocation()+space+"Date: "+e.getDate()+space+"Start at: "+e.getStartAt()+space+"End at: "+e.getEndAt()+space+"Number of Invitees: "+e.getNumOfInvitees()+space+"User Name: "+e.getUserName()+space+"Packege Id: "+e.getPackegeId()+space+"Service Provider: "+e.getServiceProviderName());
-        }
-        return "All events has been printed";
-    }
-    }
+
+}
