@@ -263,7 +263,7 @@ public class Main {
         logger.info("Enter place name: ");
         String placeName = scanner.nextLine();
 
-        logger.info("Enter package description: ");
+        logger.info("Enter package services: ");
         String description = scanner.nextLine();
 
         String serviceProviderName = serviceProvider.getUsername();
