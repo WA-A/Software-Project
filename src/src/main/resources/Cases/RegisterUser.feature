@@ -3,7 +3,7 @@ Feature: User Registration
   @scenario1
   Scenario Outline: Successful User Registration
     Given The user is on the registration page
-    When The user enters <Username>,  <Password> ,<Email>  , <PhoneNum>   # Email is unique
+    When The user enters <Username>,  <Password> ,<Email>  , <PhoneNum>
     Then I should Email and Password is valid
 
     Examples:

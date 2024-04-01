@@ -4,69 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3cf4051833b78e47c5d68b7a98e953669a6d006a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4ce45ad0490d033a09b9bffbdd45dc45b53281d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62466e90f1f6ef0d9e400cc0d0870f5ceba57158" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c6c881c4886193339cc2a83459132f958987ae1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d3db8b36cafb76d2e7004c9368ed5b550f462ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76c6944c001f88964d303fc8d36ceb641ea7fc79" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/922d7731ffd0a961e6926a63cb6d18c089aa885a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95d71bd49e97f5fc478c9ebb507bb22c4f43ccfa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a529aef421a6a65acd1baf0d90d7b8aeba2ba97d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b55871997d1e4babf0fabb762e4de98bf22556cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e24d80aa940d042cc33fb885e58a4ec9d11ebe45" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f30a77985dc6f786bd1e353c12381695fa4b426e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/c/3cf4051833b78e47c5d68b7a98e953669a6d006a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/c/4ce45ad0490d033a09b9bffbdd45dc45b53281d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/2/62466e90f1f6ef0d9e400cc0d0870f5ceba57158" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/c/6c6c881c4886193339cc2a83459132f958987ae1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/d/6d3db8b36cafb76d2e7004c9368ed5b550f462ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/6/76c6944c001f88964d303fc8d36ceb641ea7fc79" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/2/922d7731ffd0a961e6926a63cb6d18c089aa885a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/5/95d71bd49e97f5fc478c9ebb507bb22c4f43ccfa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a529aef421a6a65acd1baf0d90d7b8aeba2ba97d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/5/b55871997d1e4babf0fabb762e4de98bf22556cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/2/e24d80aa940d042cc33fb885e58a4ec9d11ebe45" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f30a77985dc6f786bd1e353c12381695fa4b426e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="trying">
+      <change afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/4.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/AddDeleteUpdate.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/FilterServicProvider.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/addNewPackege.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/checkBudget.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/newUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/resources/Cases/newUser.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/BookVenueTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/Calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/Calender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/EventManagementSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/EventManagementTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/FilterServicProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/PlaceManageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterAdmin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/SchedulingTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServicrProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/checkBudget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/Calendar.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/Event.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/EventManagement.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/PlaceManagement.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/RegisterAdmin.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/resources/Cases/RegisterUser.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/SchedulingTools.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/ServiceProviderLogin.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/VenueBooking.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/ViewCalender.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/event.feature.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/serviceproviderRegister.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/Calender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ExpenseTracking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ViewCalendar.java" beforeDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,62 +83,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: newUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StepDefinitions.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StepDefinitions.the_system_should_display_all_messages_for.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testCreateEventWithInvalidDate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Batool&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
-
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: LoginUser.executor": "Run",
+    "Cucumber Java.Feature: newAdmin.executor": "Coverage",
+    "JUnit.AdminTest.executor": "Run",
+    "JUnit.LoginAdmin.executor": "Run",
+    "JUnit.LoginServiceProvider.executor": "Run",
+    "JUnit.LoginUser.executor": "Run",
+    "JUnit.RegisterUser.executor": "Run",
+    "JUnit.RegisterUser.i_should_email_and_password_is_valid.executor": "Run",
+    "JUnit.RegisterUser.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "Batool",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
   </component>
-
-  <component name="RunManager" selected="JUnit.UserTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: newUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/newUser.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="src" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: newUser" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="LoginAdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -178,14 +119,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.AdminTest" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.LoginAdminTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepDefinitions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-    <configuration name="UserTest.testCreateEventWithInvalidDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginServiceProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -194,17 +134,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.LoginServiceProviderTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.UserTest" />
-      <option name="METHOD_NAME" value="testCreateEventWithInvalidDate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterUserTest.i_should_email_and_password_is_valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
+      <option name="METHOD_NAME" value="i_should_email_and_password_is_valid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-    <configuration name="UserTest.the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -213,9 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="METHOD_NAME" value="the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
+      <option name="METHOD_NAME" value="the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -223,29 +189,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Cucumber Java.Feature: newUser" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.StepDefinitions" />
-        <item itemvalue="JUnit.AdminTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.UserTest.testCreateEventWithInvalidDate" />
-        <item itemvalue="JUnit.UserTest.the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria" />
-        <item itemvalue="Cucumber Java.Feature: newUser" />
+        <item itemvalue="JUnit.RegisterUserTest" />
+        <item itemvalue="JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
+        <item itemvalue="JUnit.RegisterUserTest.i_should_email_and_password_is_valid" />
+        <item itemvalue="JUnit.LoginAdminTest" />
+        <item itemvalue="JUnit.LoginServiceProviderTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying" />
+      <changelist id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="workspace" />
       <created>1709472674167</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -499,24 +461,23 @@
       <option name="project" value="LOCAL؜" />
       <updated>1711920300765</updated>
     </task>
-    <task id="LOCAL؜-٠٠٠٣٢" summary="trying">
+    <task id="LOCAL-00032" summary="LoginUser Not Complated">
       <option name="closed" value="true" />
-      <created>1711920660137</created>
-      <option name="number" value="٠٠٠٣٢" />
-      <option name="presentableId" value="LOCAL؜-٠٠٠٣٢" />
-      <option name="project" value="LOCAL؜" />
-      <updated>1711920660137</updated>
-    </task>
-    <option name="localTasksCounter" value="33" />
-    <task id="LOCAL-00032" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711920840061</created>
+      <created>1711979708735</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1711920840061</updated>
+      <updated>1711979708735</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="LoginUser">
+      <option name="closed" value="true" />
+      <created>1711990180881</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990180881</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -545,19 +506,15 @@
     <MESSAGE value="hello all" />
     <MESSAGE value="hello" />
     <MESSAGE value="test" />
+    <MESSAGE value="workspace" />
+    <MESSAGE value="LoginUser Not Complated" />
+    <MESSAGE value="LoginUser" />
     <MESSAGE value="trying" />
     <option name="LAST_COMMIT_MESSAGE" value="trying" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java</url>
-          <line>173</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Softwear_Project$Feature__LoginUser.ic" NAME="Feature: LoginUser Coverage Results" MODIFIED="1711974562381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

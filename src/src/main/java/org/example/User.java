@@ -29,18 +29,13 @@ public User(){
     password=null;
     email=null;
     phoneNum=null;
-}
-public User(String username,String password,String email,String phoneNum){
-    this.username=username;
-    this.password=password;
-    this.email=email;
-    this.phoneNum=phoneNum;
+    isLogged=false;
 }
     public void setLogged(boolean isLogged){
         this.isLogged=isLogged;
     }
     public boolean getLogged(){
-        return this.isLogged;
+    return this.isLogged;
     }
 public void setUsername(String username){
     this.username=username;
