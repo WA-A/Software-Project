@@ -264,12 +264,12 @@ public class Main {
         String placeName = scanner.nextLine();
 
         logger.info("Enter package services: ");
-        String description = scanner.nextLine();
+        String services = scanner.nextLine();
 
         String serviceProviderName = serviceProvider.getUsername();
 
 
-        String result = serviceProvider.addPackage(packageId, price, capacity, location, placeName, description, serviceProviderName);
+        String result = serviceProvider.addPackage(packageId, price, capacity, location, placeName, services, serviceProviderName);
         logger.info(result);
     }
 
