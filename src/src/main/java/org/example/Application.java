@@ -2,9 +2,7 @@ package org.example;
 
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
-import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Application {
@@ -251,15 +249,14 @@ public ServiceProvider checkServiceProvider(String username,String password){
  public String registerUser(String username, String password, String email, String phoneNumber){
  User u=new User();
 
-
- u.setUsername(username);
-
-
- u.setPassword(password);
-
-
+for(User c: users){
+ if(c.getEmail().equals(email)||c.getPassword().equals(password)||c.getPhoneNum().equals(phoneNumber)){
+  return "Invalid information, The register failed";
+ }
+}
+  u.setUsername(username);
+  u.setPassword(password);
  u.setEmail(email);
-
  u.setPhoneNum(phoneNumber);
  u.setLogged(true);
  Application.users.add(u);
