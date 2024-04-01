@@ -4,7 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +51,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
   }
 }</component>
   <component name="RecentsManager">
@@ -60,11 +58,12 @@
       <recent name="org.example" />
     </key>
   </component>
-
       <module name="src" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LoginUser" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,13 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: newUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/newUser.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="src" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: newUser" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -137,25 +129,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Cucumber Java.Feature: newUser" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.StepDefinitions" />
-        <item itemvalue="JUnit.AdminTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying" />
+      <changelist id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="workspace" />
       <created>1709472674167</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -409,15 +389,6 @@
       <option name="project" value="LOCAL؜" />
       <updated>1711920300765</updated>
     </task>
-    <task id="LOCAL؜-٠٠٠٣٢" summary="trying">
-      <option name="closed" value="true" />
-      <created>1711920660137</created>
-      <option name="number" value="٠٠٠٣٢" />
-      <option name="presentableId" value="LOCAL؜-٠٠٠٣٢" />
-      <option name="project" value="LOCAL؜" />
-      <updated>1711920660137</updated>
-    </task>
-    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -447,6 +418,17 @@
     <MESSAGE value="hello" />
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="workspace" />
+    <MESSAGE value="LoginUser Not Complated" />
+    <MESSAGE value="LoginUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginUser" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Softwear_Project$Feature__newAdmin.ic" NAME="Feature: newAdmin Coverage Results" MODIFIED="1711990607813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Softwear_Project$Feature__LoginUser.ic" NAME="Feature: LoginUser Coverage Results" MODIFIED="1711974562381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>
