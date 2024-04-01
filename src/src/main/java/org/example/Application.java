@@ -11,9 +11,9 @@ public class Application {
 protected static final List<Admin> admins= new ArrayList<>();
 protected static final List<ServiceProvider> servicesProviders =new ArrayList<>();
 protected static final List<User> users =new ArrayList<>();
- protected static final List<Packege> packeges =new ArrayList<>();
+ public static final List<Packege> packeges =new ArrayList<>();
 protected static final List<Event> events=new ArrayList<>();
- protected static final List<Calender> calenders=new ArrayList<>();
+ public static final List<Calender> calenders=new ArrayList<>();
  protected static final List<Message> messages=new ArrayList<>();
  private static final Logger logger = Logger.getLogger(Application.class.getName());
 
@@ -68,7 +68,7 @@ public Application(){
  Packege p1=new Packege();
  p1.setId(1);
  p1.setServiceProviderName(s1.getUsername());
- p1.setLocation("Nablus");
+ p1.setLocation("Tulkarim");
  p1.setCapacity(200);
  p1.setPlaceName("Moon sign");
  p1.setPrice(2500);
@@ -137,9 +137,9 @@ public Application(){
  e3.setServiceProviderName(p3.getServicesProviderName());
  e3.setLocation(p3.getLocation());
  e3.setNumOfInvitees(320);
- e3.setDate("9/8/2023");
- e3.setStartAt("12:00");
- e3.setEndAt("1:30");
+ e3.setDate("20/4/2024");
+ e3.setStartAt("08:00");
+ e3.setEndAt("10:00");
  Event e4=new Event();
  e4.setPackegeId(p2.getId());
  e4.setEventTitle("Event 4");
@@ -152,12 +152,12 @@ public Application(){
  e4.setEndAt("5:00");
  Event e5=new Event();
  e5.setPackegeId(p1.getId());
- e5.setEventTitle("Event 4");
+ e5.setEventTitle("Event 5");
  e5.setUserName(u1.getUsername());
  e5.setServiceProviderName(p1.getServicesProviderName());
  e5.setLocation(p1.getLocation());
  e5.setNumOfInvitees(100);
- e5.setDate("1/4/2024");
+ e5.setDate("20/4/2024");
  e5.setStartAt("4:00");
  e5.setEndAt("5:30");
  events.add(e1);
@@ -235,7 +235,7 @@ public ServiceProvider checkServiceProvider(String username,String password){
 
   for(User u: users){
    if(u.getUsername().equals(username)&& u.getPassword().equals(password)){
-    logger.info("The is found");
+    logger.info("The User is found");
     u.setLogged(true);
     return u;
    }

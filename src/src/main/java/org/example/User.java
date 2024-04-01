@@ -1,11 +1,15 @@
 package org.example;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeParseException;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 import java.util.logging.Logger;
+import java.text.MessageFormat;
+import java.util.Objects;
+
 
 public class User{
     private String username;
@@ -14,8 +18,9 @@ public class User{
     private String phoneNum;
     private boolean isLogged;
     private static final Logger LOGGER = Logger.getLogger(User.class.getName());
-    private static final List<Packege> packegesAfterFilter = new ArrayList<>();
-    private static final List<Event> currentEvent= new ArrayList<>();
+   protected static final List<Packege> packegesAfterFilter = new ArrayList<>();
+    protected static final List<Event> currentEvent= new ArrayList<>();
+    private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm");
 
 
 
@@ -72,29 +77,29 @@ public String getPhoneNum(){
         String location=loc;
         List<Packege> packAfterLoc=filterByLocation(packAfterBud,location);
         if(packAfterLoc.isEmpty()){
-            return "We do not have a package with the same or lower budget than you enterd and the same location";
+            return "We do not have a package with the same location";
         }
          int numInvitees=numInvite;
         List<Packege> packAfterCapacity=filterByCapacity(packAfterLoc,numInvitees);
         if(packAfterCapacity.isEmpty()){
-            return "We do not have a package with the same or lower budget than you enterd and the same location,Capacity";
+            return "We do not have a package with the same Capacity";
         }
        String date=d;
-        List<Packege> packAfterDate=filterByDate(packAfterCapacity,date);
-        if(packAfterDate.isEmpty()){
-            return "We do not have a package with the same or lower budget than you enterd and the same location,capacity,date";
-        }
         String startAt=startTime;
         String endAt=endTime;
-        List<Packege> packAfterTime= filterByStartTime(packAfterDate,startAt);
+        List<Packege> packAfterTime= filterByStartTime(packAfterCapacity,date,startAt);
         if(packAfterTime.isEmpty()){
-            return "We do not have a package with the same or lower budget than you enterd and the same location,capacity,date";
+            return "This day at this time is unavailable";
         }
-        String space="    ";
+
        for (Packege p: packAfterTime){
            packegesAfterFilter.add(p);
-           LOGGER.info("Packege Id: "+p.getId()+space+"Place Name: "+p.getPlaceName()+space+"Location: "+p.getLocation()+space+"Capacity: "+p.getCapacity()+space+"Packege Price: "+p.getPrice()+space+"Services: "+p.getServicesDes()+space+"Service Provider: "+p.getServicesProviderName());
+           String logMessage = MessageFormat.format(
+                   "Package Id: {0}    Place Name: {1}    Location: {2}    Capacity: {3}    Package Price: {4}    Services: {5}    Service Provider: {6}",
+                   p.getId(), p.getPlaceName(), p.getLocation(), p.getCapacity(), p.getPrice(), p.getServicesDes(), p.getServicesProviderName());
+           LOGGER.info(logMessage);
        }
+
 Event e=new Event();
        e.setEventTitle(eventTitle);
        e.setUserName(this.getUsername());
@@ -104,71 +109,85 @@ Event e=new Event();
        e.setStartAt(startAt);
        e.setEndAt(endAt);
        currentEvent.add(e);
+
    return "Please enter the Packege Id that you want to approve: ";
     }
-    public String choosePackege(int packId){
-        int packegeId= packId;
-        String servicrPrividerName=null;
-        for (Packege p: packegesAfterFilter){
-            if(p.getId()==packegeId){
-                servicrPrividerName= p.getServicesProviderName();
-            }
-            else{
-                return "Invalid Packege Id";
+    public String choosePackege(int packId) {
+        String serviceProviderName = null;
+
+        for (Packege p : packegesAfterFilter) {
+            if (p.getId() == packId) {
+                serviceProviderName = p.getServicesProviderName();
+                break;
             }
         }
+       if (serviceProviderName == null) {
+            return "Invalid Package Id";
+        }
+        if (currentEvent.isEmpty()) {
+            return "No event found to assign the package.";
+        }
+
         Event e = currentEvent.get(0);
-        e.setPackegeId(packegeId);
-        e.setServiceProviderName(servicrPrividerName);
-
-        Iterator<Event> iterator = currentEvent.iterator();
-        while (iterator.hasNext()) {
-
-            iterator.remove();
-        }
-        Iterator<Packege> i = packegesAfterFilter.iterator();
-        while (i.hasNext()) {
-
-            i.remove();
-        }
+        LOGGER.info(e.getEventTitle()+e.getLocation()+e.getDate());
+        e.setPackegeId(packId);
+        e.setServiceProviderName(serviceProviderName);
+        Application.events.add(e);
+        Calender c=new Calender();
+        c.setEventTitle(e.getEventTitle());
+        c.setPackegeId(e.getPackegeId());
+        c.setServiceProviderName(e.getServiceProviderName());
+        c.setDate(e.getDate());
+        c.setStartAt(e.getStartAt());
+        c.setEndAt(e.getEndAt());
+        Application.calenders.add(c);
         return "The event is created Successfully";
     }
 
-    private List<Packege> filterByStartTime(List<Packege> packAfterDate, String startAt) {
-        List<Packege> pack = new ArrayList<>(packAfterDate);
-        Iterator<Packege> iterator = pack.iterator();
-        LocalTime userTime = LocalTime.parse(startAt);
+
+
+    public List<Packege> filterByStartTime(List<Packege> packAfterCapacity, String date, String startAt) {
+        LocalTime userTime = parseTime(startAt);
+        if (userTime == null) {
+            return new ArrayList<>();
+        }
+
+        List<Packege> filteredPackages = new ArrayList<>(packAfterCapacity);
+        Iterator<Packege> iterator = filteredPackages.iterator();
+
         while (iterator.hasNext()) {
             Packege p = iterator.next();
-            for (Calender c : Application.calenders) {
-                LocalTime startTime = LocalTime.parse(c.getStartAt());
-                LocalTime endTime = LocalTime.parse(c.getEndAt());
-                if (p.getId() == c.getPackegeId()) {
-                    boolean isBetween = userTime.isAfter(startTime) && userTime.isBefore(endTime);
-                    if(isBetween){
-                    iterator.remove();
-                    break;
-                    }
-                }
+            if (isPackageTimeOverlap(p, date, userTime)) {
+                iterator.remove();
             }
         }
-        return pack;
+        return filteredPackages;
     }
 
-    private List<Packege> filterByDate(List<Packege> packAfterCapacity, String date) {
-        List<Packege> pack = new ArrayList<>(packAfterCapacity);
-        Iterator<Packege> iterator = pack.iterator();
-        while (iterator.hasNext()) {
-            Packege p = iterator.next();
-            for (Calender c : Application.calenders) {
-                if (p.getId() == c.getPackegeId() && c.getDate().equals(date)) {
-                    iterator.remove();
-                    break;
+    private boolean isPackageTimeOverlap(Packege pkg, String date, LocalTime userTime) {
+        for (Calender calendar : Application.calenders) {
+            if (pkg.getId() == calendar.getPackegeId() && calendar.getDate().equals(date)) {
+                LocalTime startTime = parseTime(calendar.getStartAt());
+                LocalTime endTime = parseTime(calendar.getEndAt());
+                if (startTime != null && endTime != null && isTimeBetween(userTime, startTime, endTime)) {
+                    return true;
                 }
             }
         }
+        return false;
+    }
 
-        return pack;
+    private boolean isTimeBetween(LocalTime target, LocalTime start, LocalTime end) {
+        return !target.isBefore(start) && !target.isAfter(end);
+    }
+
+    private LocalTime parseTime(String timeString) {
+        try {
+            return LocalTime.parse(timeString, TIME_FORMATTER);
+        } catch (DateTimeParseException e) {
+            LOGGER.info("Could not parse the time: " + e.getMessage());
+            return null;
+        }
     }
 
     private  List<Packege> filterByCapacity(List<Packege> packAfterLoc, int numInvitees) {
@@ -191,7 +210,7 @@ Event e=new Event();
         return pack;
     }
 
-    public List<Packege> filterByBudget(int budget) {
+    private List<Packege> filterByBudget(int budget) {
         List<Packege> pack=new ArrayList<>();
         for(Packege p:Application.packeges){
             if(p.getPrice() <= budget){
@@ -202,33 +221,54 @@ Event e=new Event();
         return pack;
     }
 
-    public void showMyEvents(String userName){
-    String space="    ";
-    for(Event e: Application.events){
-        if(e.getUserName().equals(userName)){
-            LOGGER.info("Event Title: "+e.getEventTitle()+space+"Location: "+e.getLocation()+space+"Number of Invitees: "+e.getNumOfInvitees()+space+"Date: "+e.getDate()+space+"Start At: "+e.getStartAt()+space+"End At: "+e.getEndAt());
+
+
+
+        public String showMyEvents(String userName) {
+            // Initialize a space string for formatting output
+            String space = "    ";
+
+            // Flag to indicate if any events were found for the user
+            boolean eventFound = false;
+
+            // Iterate through the events
+            for (Event e : Application.events) {
+                // Check if the event is associated with the given user name
+                if (Objects.equals(e.getUserName(), userName)) {
+                    // Construct the log message using built-in formatting
+                    String logMessage = String.format("Event Title: %s%sLocation: %s%sNumber of Invitees: %d%sDate: %s%sStart At: %s%sEnd At: %s",
+                            e.getEventTitle(), space, e.getLocation(), space, e.getNumOfInvitees(), space, e.getDate(), space, e.getStartAt(), space, e.getEndAt());
+
+                    LOGGER.info(logMessage);
+                    eventFound = true;
+                }
+            }
+            return eventFound ? "All your events have been shown." : "No events found for the user.";
         }
-    }
-    }
-public void deleteEvent(){
-    Scanner scanner = new Scanner(System.in);
-    LOGGER.info("Enter the Event Title you want to delete: ");
-    String eventTitle= scanner.next();
-    for(Event e:Application.events){
-        if(e.getEventTitle().equals(eventTitle)){
-            Application.events.remove(e);
+
+
+    public String deleteEvent(String title) {
+        String eventTitle = title;
+        Iterator<Event> iterator = Application.events.iterator();
+        while (iterator.hasNext()) {
+            Event e = iterator.next();
+            if (e.getEventTitle().equals(eventTitle)) {
+                iterator.remove();
+            }
         }
-    }
-    for(Calender c:Application.calenders){
-        if(c.getEventTitle().equals(eventTitle)){
-            Application.events.remove(c);
-            Application.sendMessage("The event with title: "+eventTitle+" is deleted",c.getServiceProviderName());
+        Iterator<Calender> calenderIterator = Application.calenders.iterator();
+        while (calenderIterator.hasNext()) {
+            Calender c = calenderIterator.next();
+            if (c.getEventTitle().equals(eventTitle)) {
+                Application.sendMessage("The event with title: " + eventTitle + " is deleted", c.getServiceProviderName());
+                calenderIterator.remove(); // Remove calender entry
+            }
         }
+
+        LOGGER.info("The event is deleted successfully");
+        return "The event is deleted successfully";
     }
 
-    LOGGER.info("The event is deleted succesfully");
+
 }
 
-
-
-}

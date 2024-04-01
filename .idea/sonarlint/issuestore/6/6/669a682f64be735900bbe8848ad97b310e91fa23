@@ -1,0 +1,13 @@
+
+˜	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øºíıÿÿÿÿ8ËÌÌÌé1J$901d3ee7-005e-495d-884e-fba748d78814
+}
+java:S1854g"5Remove this useless assignment to local variable "w".(Õáš™ùÿÿÿÿ8ÒÌÌÌé1J$9f3f3df2-9870-4979-a97c-92636fe4ec96
+x
+java:S1854v"5Remove this useless assignment to local variable "m".(œËÄÍ8ÓÌÌÌé1J$994d9419-7448-477d-a466-e5b8ca455d4b
+x
+java:S1854m"5Remove this useless assignment to local variable "u".(¨È©¦8ÔÌÌÌé1J$2ff466a3-7eb0-4995-8d77-3b3973f1eb07
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(İû¨ùÿÿÿÿ8×ÌÌÌé1J$0584f353-2c00-4893-b6df-09d57038ca72
+i
+java:S1481v"&Remove this unused "m" local variable.(œËÄÍ8İÌÌÌé1J$5e09e0f5-6efd-4e9a-9bcd-c34b4336aaaa
+f
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD8–şÍÌé1J$af364fea-c1a5-4e5e-83df-088933d1e8bf
