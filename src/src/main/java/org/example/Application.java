@@ -11,9 +11,9 @@ public class Application {
 protected static final List<Admin> admins= new ArrayList<>();
 protected static final List<ServiceProvider> servicesProviders =new ArrayList<>();
 protected static final List<User> users =new ArrayList<>();
- public static final List<Packege> packeges =new ArrayList<>();
+ protected static final List<Packege> packeges =new ArrayList<>();
 protected static final List<Event> events=new ArrayList<>();
- public static final List<Calender> calenders=new ArrayList<>();
+ protected static final List<Calender> calenders=new ArrayList<>();
  protected static final List<Message> messages=new ArrayList<>();
  private static final Logger logger = Logger.getLogger(Application.class.getName());
 
@@ -68,7 +68,7 @@ public Application(){
  Packege p1=new Packege();
  p1.setId(1);
  p1.setServiceProviderName(s1.getUsername());
- p1.setLocation("Tulkarim");
+ p1.setLocation("Nablus");
  p1.setCapacity(200);
  p1.setPlaceName("Moon sign");
  p1.setPrice(2500);
@@ -118,8 +118,8 @@ public Application(){
  e1.setLocation(p1.getLocation());
  e1.setNumOfInvitees(170);
  e1.setDate("10/12/2022");
- e1.setStartAt("1:00");
- e1.setEndAt("2:30");
+ e1.setStartAt("01:00");
+ e1.setEndAt("02:30");
  Event e2=new Event();
  e2.setPackegeId(p2.getId());
  e2.setEventTitle("Event 2");
@@ -128,8 +128,8 @@ public Application(){
  e2.setLocation(p2.getLocation());
  e2.setNumOfInvitees(300);
  e2.setDate("20/9/2023");
- e2.setStartAt("3:00");
- e2.setEndAt("5:00");
+ e2.setStartAt("03:00");
+ e2.setEndAt("05:00");
  Event e3=new Event();
  e3.setPackegeId(p3.getId());
  e3.setEventTitle("Event 3");
@@ -137,9 +137,9 @@ public Application(){
  e3.setServiceProviderName(p3.getServicesProviderName());
  e3.setLocation(p3.getLocation());
  e3.setNumOfInvitees(320);
- e3.setDate("20/4/2024");
- e3.setStartAt("08:00");
- e3.setEndAt("10:00");
+ e3.setDate("9/8/2023");
+ e3.setStartAt("12:00");
+ e3.setEndAt("01:30");
  Event e4=new Event();
  e4.setPackegeId(p2.getId());
  e4.setEventTitle("Event 4");
@@ -148,18 +148,18 @@ public Application(){
  e4.setLocation(p2.getLocation());
  e4.setNumOfInvitees(250);
  e4.setDate("10/5/2024");
- e4.setStartAt("3:00");
- e4.setEndAt("5:00");
+ e4.setStartAt("03:00");
+ e4.setEndAt("05:00");
  Event e5=new Event();
  e5.setPackegeId(p1.getId());
- e5.setEventTitle("Event 5");
+ e5.setEventTitle("Event 4");
  e5.setUserName(u1.getUsername());
  e5.setServiceProviderName(p1.getServicesProviderName());
  e5.setLocation(p1.getLocation());
  e5.setNumOfInvitees(100);
- e5.setDate("20/4/2024");
- e5.setStartAt("4:00");
- e5.setEndAt("5:30");
+ e5.setDate("1/4/2024");
+ e5.setStartAt("04:00");
+ e5.setEndAt("05:30");
  events.add(e1);
  events.add(e2);
  events.add(e3);
@@ -235,7 +235,6 @@ public ServiceProvider checkServiceProvider(String username,String password){
 
   for(User u: users){
    if(u.getUsername().equals(username)&& u.getPassword().equals(password)){
-    logger.info("The User is found");
     u.setLogged(true);
     return u;
    }
@@ -249,22 +248,21 @@ public ServiceProvider checkServiceProvider(String username,String password){
   s.setServiceProviderName(serviceProviderName);
   messages.add(s);
  }
- public String registerUser(){
-  Scanner scanner = new Scanner(System.in);
+ public String registerUser(String username, String password, String email, String phoneNumber){
  User u=new User();
-logger.info("Enter your name: ");
- String userName=scanner.next();
- u.setUsername(userName);
-  logger.info("Enter your password: ");
-  String password= scanner.next();
+
+
+ u.setUsername(username);
+
+
  u.setPassword(password);
-  logger.info("Enter your email: ");
-  String email= scanner.next();
+
+
  u.setEmail(email);
-  logger.info("Enter your phone-number: ");
-  String phoneNumber= scanner.next();
+
  u.setPhoneNum(phoneNumber);
  u.setLogged(true);
+ Application.users.add(u);
  return "The user is registerd Successfully";
  }
 

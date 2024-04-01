@@ -66,6 +66,7 @@
       <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/checkBudget.java" beforeDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +97,6 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="18" />
-        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -128,6 +128,7 @@
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Batool&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+
   }
 }</component>
   <component name="RecentsManager">
@@ -135,6 +136,7 @@
       <recent name="org.example" />
     </key>
   </component>
+
   <component name="RunManager" selected="JUnit.UserTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -167,7 +169,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -176,12 +178,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.UserTest" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.AdminTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StepDefinitions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
     <configuration name="UserTest.testCreateEventWithInvalidDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
@@ -191,6 +194,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.StepDefinitions" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.UserTest" />
       <option name="METHOD_NAME" value="testCreateEventWithInvalidDate" />
       <option name="TEST_OBJECT" value="method" />
@@ -198,6 +203,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
     <configuration name="UserTest.the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
@@ -208,6 +214,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
       <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="METHOD_NAME" value="the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -216,7 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Cucumber Java.Feature: newUser" />
         <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.StepDefinitions" />
+        <item itemvalue="JUnit.AdminTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserTest.testCreateEventWithInvalidDate" />
         <item itemvalue="JUnit.UserTest.the_system_processes_these_details_and_the_system_prints_a_list_of_suitable_packages_based_on_the_provided_criteria" />
@@ -488,6 +499,15 @@
       <option name="project" value="LOCAL؜" />
       <updated>1711920300765</updated>
     </task>
+    <task id="LOCAL؜-٠٠٠٣٢" summary="trying">
+      <option name="closed" value="true" />
+      <created>1711920660137</created>
+      <option name="number" value="٠٠٠٣٢" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣٢" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1711920660137</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <task id="LOCAL-00032" summary="trying">
       <option name="closed" value="true" />
       <created>1711920840061</created>
@@ -538,5 +558,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
