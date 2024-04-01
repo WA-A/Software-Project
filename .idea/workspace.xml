@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="LoginUser">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,38 +53,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: LoginUser.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: newAdmin.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginAdmin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginServiceProvider.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUser.i_should_email_and_password_is_valid.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUser.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Batool&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginAdminTest">
-    <configuration name="LoginAdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="src" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
+
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,8 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginServiceProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="src" />
+
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
@@ -160,11 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegisterUserTest" />
-        <item itemvalue="JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
-        <item itemvalue="JUnit.RegisterUserTest.i_should_email_and_password_is_valid" />
-        <item itemvalue="JUnit.LoginAdminTest" />
-        <item itemvalue="JUnit.LoginServiceProviderTest" />
+
       </list>
     </recent_temporary>
   </component>
@@ -448,15 +423,7 @@
       <option name="project" value="LOCAL" />
       <updated>1711990180881</updated>
     </task>
-    <task id="LOCAL-00034" summary="LoginUser">
-      <option name="closed" value="true" />
-      <created>1712009881095</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1712009881095</updated>
-    </task>
-    <option name="localTasksCounter" value="35" />
+
     <servers />
   </component>
   <component name="UnknownFeatures">
