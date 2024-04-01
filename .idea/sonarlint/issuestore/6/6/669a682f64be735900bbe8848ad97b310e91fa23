@@ -1,0 +1,31 @@
+
+›
+java:S1192"XDefine a constant instead of duplicating this literal " Plases Choose Page : 
+" 3 times.(΅ΫάΕ8¬ϋωθ1J$f137be3d-cac2-420d-99a8-286899741816
+–
+java:S1192!"SDefine a constant instead of duplicating this literal "Enter Number 1/2 
+" 3 times.(ΤΨ¤€8®ϋωθ1J$b65fe26e-5bf8-4924-baa1-a2bb37d7db9a
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Αΐ‹δώÿÿÿÿ8°ϋωθ1J$92b2c761-3ee5-4490-91dd-20c24e7e1f33
+“	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ι¥“­8±ϋωθ1J$e2101d70-4b67-4c96-bc78-e8fd57d1059f
+“	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ι¥“­8±ϋωθ1J$19e0a38e-e407-48ca-b467-80c655c4d5bb
+“	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ι¥“­8±ϋωθ1J$951dc095-54e2-453e-a15b-2a11578cf34f
+m	java:S106"+Replace this use of System.out by a logger.(Δ¶ψ8―όωθ1J$ee8e1da3-4894-4cba-9748-879a0da36139
+u
+java:S6126"2Replace this String concatenation with Text block.(Δ¶ψ8±όωθ1J$e180f5dd-0388-465a-94ed-f55814fd09f8
+r	java:S106"+Replace this use of System.out by a logger.(·Ζκϋÿÿÿÿ8²όωθ1J$c0289d32-17cd-420e-a504-84ca770af377
+m	java:S106"+Replace this use of System.out by a logger.(ΔΥ±8Ήόωθ1J$83a4fa9d-317c-4160-9520-ee147e931da1
+u
+java:S6126"2Replace this String concatenation with Text block.(ΔΥ±8Ήόωθ1J$ed540809-86f0-4780-91be-4a37b7b1b117
+m	java:S106!"+Replace this use of System.out by a logger.(ΤΨ¤€8»όωθ1J$08a8e5b5-5976-4a87-80d4-4b890db32472
+m	java:S1060"+Replace this use of System.out by a logger.(΄ΕΘΤ8½όωθ1J$9e63ca0e-eec2-4f6f-8f46-73dfab1e35ad
+u
+java:S61260"2Replace this String concatenation with Text block.(΄ΕΘΤ8½όωθ1J$4a597d24-1fcc-44b5-8487-d9623ab9fd1a
+m	java:S1066"+Replace this use of System.out by a logger.(ΤΨ¤€8Ύόωθ1J$500613bf-18ad-4d30-a945-4ce57fc1fea0
+r	java:S106F"+Replace this use of System.out by a logger.(®Ϊϊθόÿÿÿÿ8ΐόωθ1J$635b181b-61bb-4f94-a275-6bf56a5fc8e1
+z
+java:S6126F"2Replace this String concatenation with Text block.(®Ϊϊθόÿÿÿÿ8Αόωθ1J$2f61f68e-ee6c-4cc3-ba35-0944da31dc08
+m	java:S106L"+Replace this use of System.out by a logger.(ΤΨ¤€8Γόωθ1J$a68945f4-e3e8-434c-b3f3-dd9b8ef70c63
+m	java:S106Y"+Replace this use of System.out by a logger.(…ΰύ8Εόωθ1J$22f5eb2b-e4ad-4edb-9e7a-0355f4dfbf43
+m	java:S106Z"+Replace this use of System.out by a logger.(…ΰύ8Εόωθ1J$2ae5aa51-1750-4fe3-aa05-abb97416d1eb
+f
+java:S1128"$Remove this unused import 'java.io'.(¬›γD8Ά½ωθ1J$b437d14e-9b80-4262-8ddf-f68e05aeddda
