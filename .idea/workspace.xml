@@ -4,37 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="trying">
-      <change afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="LoginUser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/Calendar.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/Event.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/EventManagement.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/PlaceManagement.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/RegisterAdmin.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/resources/Cases/RegisterUser.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/SchedulingTools.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/ServiceProviderLogin.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/VenueBooking.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/ViewCalender.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/event.feature.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/resources/Cases/serviceproviderRegister.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/Calender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ExpenseTracking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ViewCalendar.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -477,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711990180881</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="LoginUser">
+      <option name="closed" value="true" />
+      <created>1712009881095</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712009881095</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -508,9 +487,9 @@
     <MESSAGE value="test" />
     <MESSAGE value="workspace" />
     <MESSAGE value="LoginUser Not Complated" />
-    <MESSAGE value="LoginUser" />
     <MESSAGE value="trying" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying" />
+    <MESSAGE value="LoginUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginUser" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Softwear_Project$Feature__LoginUser.ic" NAME="Feature: LoginUser Coverage Results" MODIFIED="1711974562381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
