@@ -4,11 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="LoginUser">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" afterDir="false" />
-    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,38 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: LoginUser.executor": "Run",
-    "Cucumber Java.Feature: newAdmin.executor": "Run",
-    "JUnit.AdminTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Wasan",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: newAdmin">
-    <configuration name="Feature: LoginUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/LoginUser.feature" />
-      <option name="GLUE" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="src" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: LoginUser" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,14 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: newAdmin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/newAdmin.feature" />
-      <option name="GLUE" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="src" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: newAdmin" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,11 +129,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: newAdmin" />
-        <item itemvalue="Cucumber Java.Feature: LoginUser" />
-        <item itemvalue="JUnit.AdminTest" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.StepDefinitions" />
       </list>
     </recent_temporary>
   </component>
@@ -426,23 +389,6 @@
       <option name="project" value="LOCAL؜" />
       <updated>1711920300765</updated>
     </task>
-    <task id="LOCAL-00032" summary="LoginUser Not Complated">
-      <option name="closed" value="true" />
-      <created>1711979708735</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1711979708735</updated>
-    </task>
-    <task id="LOCAL-00033" summary="LoginUser">
-      <option name="closed" value="true" />
-      <created>1711990180881</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1711990180881</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="UnknownFeatures">
