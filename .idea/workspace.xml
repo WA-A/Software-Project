@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="EDIT" />
+    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="LoginUser">
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +28,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.idea/workspace.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,25 +53,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: LoginUser.executor": "Run",
-    "Cucumber Java.Feature: newAdmin.executor": "Coverage",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.LoginAdmin.executor": "Run",
-    "JUnit.LoginServiceProvider.executor": "Run",
-    "JUnit.LoginUser.executor": "Run",
-    "JUnit.RegisterUser.executor": "Run",
-    "JUnit.RegisterUser.i_should_email_and_password_is_valid.executor": "Run",
-    "JUnit.RegisterUser.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Wasan",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,12 +61,11 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginAdminTest">
-    <configuration name="LoginAdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="src" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
+
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,8 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginServiceProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="src" />
+
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
@@ -161,11 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegisterUserTest" />
-        <item itemvalue="JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
-        <item itemvalue="JUnit.RegisterUserTest.i_should_email_and_password_is_valid" />
-        <item itemvalue="JUnit.LoginAdminTest" />
-        <item itemvalue="JUnit.LoginServiceProviderTest" />
+
       </list>
     </recent_temporary>
   </component>
@@ -449,15 +423,7 @@
       <option name="project" value="LOCAL" />
       <updated>1711990180881</updated>
     </task>
-    <task id="LOCAL-00034" summary="LoginUser">
-      <option name="closed" value="true" />
-      <created>1712009881095</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1712009881095</updated>
-    </task>
-    <option name="localTasksCounter" value="35" />
+
     <servers />
   </component>
   <component name="UnknownFeatures">
