@@ -4,6 +4,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class ServiceProvider {
@@ -76,126 +77,115 @@ public void setPhoneNum(String phoneNum){
     }
 
     public String updatePackage(int id, int updateType, String newValue) {
+        boolean updated = false;
 
         for (Packege pkg : Application.packeges) {
             if (pkg.getId() == id) {
                 switch (updateType) {
                     case 1:
-                       updatePrice(pkg, newValue);
+                        updatePrice(pkg, newValue);
+                        updated = true;
                         break;
                     case 2:
-                       updateCapacity(pkg, newValue);
+                        updateCapacity(pkg, newValue);
+                        updated = true;
                         break;
                     case 3:
-                       updateLocation(pkg, newValue);
+                        updateLocation(pkg, newValue);
+                        updated = true;
                         break;
                     case 4:
-                       updatePlaceName(pkg, newValue);
+                        updatePlaceName(pkg, newValue);
+                        updated = true;
                         break;
                     case 5:
-                   updateServicesDes(pkg,newValue);
-                      break;
+                        updateServicesDes(pkg, newValue);
+                        updated = true;
+                        break;
                     case 6:
-                      updateServiceProviderName(pkg, newValue);
+                        updateServiceProviderName(pkg, newValue);
+                        updated = true;
                         break;
                     default:
                         LOGGER.warning("Invalid option. Please try again.");
                         return "Invalid update option provided.";
                 }
-
+                return updated ? "Package updated successfully." : "No updates made.";
             }
         }
-        return "Package updated successfully.";
+        return "Package not found.";
     }
 
-
-    private boolean updatePrice(Packege pkg, String newValue) {
+    private void updatePrice(Packege pkg, String newValue) {
         pkg.setPrice(Integer.parseInt(newValue));
-        return true; // Return true if the update is successful
+
     }
 
-    private boolean updateCapacity(Packege pkg, String newValue) {
+    private void updateCapacity(Packege pkg, String newValue) {
         pkg.setCapacity(Integer.parseInt(newValue));
-        return true; // Return true if the update is successful
+
     }
 
-    private boolean updateLocation(Packege pkg, String newValue) {
+    private void updateLocation(Packege pkg, String newValue) {
         pkg.setLocation(newValue);
-        return true; // Return true if the update is successful
+
     }
 
-    private boolean updatePlaceName(Packege pkg, String newValue) {
+    private String updatePlaceName(Packege pkg, String newValue) {
         pkg.setPlaceName(newValue);
-        return true; // Return true if the update is successful
+        return "Place name updated successfully";
     }
 
-    private boolean updateServicesDes(Packege pkg, String newValue) {
+    private void updateServicesDes(Packege pkg, String newValue) {
         pkg.setServicesDes(newValue);
-        return true; // Return true if the update is successful
+
     }
 
-    private boolean updateServiceProviderName(Packege pkg, String newValue) {
+    private void updateServiceProviderName(Packege pkg, String newValue) {
         pkg.setServiceProviderName(newValue);
-        return true; // Return true if the update is successful
+
     }
 
 
 public String showMyPackeges(String username){
     List<Packege> pack=new ArrayList<>();
     boolean flage= false;
+    String space="    ";
     for(Packege p:Application.packeges){
         if(p.getServicesProviderName().equals(username)){
             flage=true;
             pack.add(p);
         }
     }
-    for (Packege p : pack) {
-        String logMessage = String.format("Packege Id: %d Place Name: %s Location: %s Capacity: %d Packege Price: %.2f Services: %s Service Provider: %s",
-                p.getId(), p.getPlaceName(), p.getLocation(), p.getCapacity(), p.getPrice(), p.getServicesDes(), p.getServicesProviderName());
-        LOGGER.info(logMessage);
+    for(Packege p: pack){
+        LOGGER.info("Packege Id: "+p.getId()+space+"Place Name: "+p.getPlaceName()+space+"Location: "+p.getLocation()+space+"Capacity: "+p.getCapacity()+space+"Packege Price: "+p.getPrice()+space+"Services: "+p.getServicesDes()+space+"Service Provider: "+p.getServicesProviderName());
     }
-
     return flage?"There are packages":"No packages found";
 }
-    public String showMyTasks(String username) {
-        List<Calender> tasks = new ArrayList<>(); // Assuming Calendar is the correct class name
-        String space = "    ";
-
-        // Assuming Application.calendars is a correct reference to a list of Calendar objects
-        for (Calender c : Application.calenders) { // Corrected class name
-            if (c.getServiceProviderName().equals(username)) {
-                tasks.add(c);
-            }
+public String showMyTasks(String username){
+    boolean flage= false;
+    List<Calender> cal=new ArrayList<>();
+    String space="    ";
+    for(Calender c:Application.calenders){
+        if(c.getServiceProviderName().equals(username)){
+            flage=true;
+            cal.add(c);
         }
-
-        if (!tasks.isEmpty()) {
-            LOGGER.info(() -> String.format("Tasks found for user '%s':", username));
-            for (Calender c : tasks) {
-                LOGGER.info(() -> String.format("Event Title: %s %s Date: %s %s Start At: %s %s End At: %s %s Package Id: %s",
-                        c.getEventTitle(), space, c.getDate(), space, c.getStartAt(), space, c.getEndAt(), space, c.getPackegeId()));
-            }
-            return String.format("Tasks found for user '%s'.", username);
-        } else {
-            LOGGER.info(() -> String.format("No tasks found for user '%s'.", username));
-            return String.format("No tasks found for user '%s'.", username);
-        }
-
-
-
     }
-    public String showMessages(String servceProviderName){
-        boolean flage= false;
-        for(Message m:Application.messages){
-            if(m.getServiceProviderName().equals(servceProviderName)) {
-                flage=true;
-                LOGGER.info(m.getMessage());
-            }
-        }
-        return flage?"There are massages":"No massages found";
+    for(Calender c: cal){
+        LOGGER.info("Event Title: "+c.getEventTitle()+space+"Date: "+c.getDate()+space+"Start At: "+c.getStartAt()+space+"End At: "+c.getEndAt()+space+"Packege Id: "+c.getPackegeId());
     }
-
-
-
-
+    return flage?"There are tasks":"No tasks found";
+}
+public String showMessages(String servceProviderName){
+    boolean flage= false;
+    for(Message m:Application.messages){
+        if(m.getServiceProviderName().equals(servceProviderName)) {
+            flage=true;
+            LOGGER.info(m.getMessage());
+        }
+    }
+    return flage?"There are massages":"No massages found";
 }
 
+}

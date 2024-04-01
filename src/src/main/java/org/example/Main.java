@@ -264,12 +264,12 @@ public class Main {
         String placeName = scanner.nextLine();
 
         logger.info("Enter package services: ");
-        String description = scanner.nextLine();
+        String services = scanner.nextLine();
 
         String serviceProviderName = serviceProvider.getUsername();
 
 
-        String result = serviceProvider.addPackage(packageId, price, capacity, location, placeName, description, serviceProviderName);
+        String result = serviceProvider.addPackage(packageId, price, capacity, location, placeName, services, serviceProviderName);
         logger.info(result);
     }
 
@@ -430,7 +430,7 @@ public class Main {
         // Assuming package selection is needed after the initial event creation
         logger.info("Enter the package ID you want to approve: ");
         int packageId = scanner.nextInt();
-        String packageChoiceResult = user.choosePackege(packageId);
+        String packageChoiceResult = user.choosePackage(packageId);
         logger.info(packageChoiceResult); // Log the result of package selection
     }
 
