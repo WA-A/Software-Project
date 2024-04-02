@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="finish project">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee77a27329cfe82555257761f683029e392e352f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee77a27329cfe82555257761f683029e392e352f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
-    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,36 +53,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: newUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Acceptance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginAdminTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginServiceProviderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceProviderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceProviderTest.the_new_package_added_to_the_system.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServicrProviderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Yazan&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -98,11 +69,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +83,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
+
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.ServiceProviderTest" />
-        <item itemvalue="JUnit.ServiceProviderTest.the_new_package_added_to_the_system" />
-        <item itemvalue="JUnit.RegisterUserTest" />
+
       </list>
     </recent_temporary>
   </component>
@@ -499,7 +467,6 @@
     <MESSAGE value="hello" />
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
-    <MESSAGE value="finish project" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
+
   </component>
 </project>
