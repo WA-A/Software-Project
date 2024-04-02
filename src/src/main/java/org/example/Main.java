@@ -384,15 +384,12 @@ public class Main {
 
         String check=app.registerUser(username,password,email,phoneNum);
         if(check.equals("Invalid information, The register failed")) {
-            logger.info("Username and password combination already exists. Please choose another.");
+            logger.info("Username or Email combination already exists. Please choose another.");
             return null;
         }
 
 
         User newUser = app.checkUser(username,password);
-        //Application.users.add(newUser);
-        //newUser.setLogged(true);
-
         logger.info("Registration successful.");
         return newUser;
     }

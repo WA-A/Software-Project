@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/576343e4a465872c49b3d269734bf5a8953333bd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/576343e4a465872c49b3d269734bf5a8953333bd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" afterDir="false" />
+    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="finish project">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee77a27329cfe82555257761f683029e392e352f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee77a27329cfe82555257761f683029e392e352f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServicrProviderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,25 +61,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Cucumber Java.Feature: newUser.executor": "Run",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.LoginAdminTest.executor": "Run",
-    "JUnit.LoginServiceProviderTest.executor": "Run",
-    "JUnit.LoginUserTest.executor": "Run",
-    "JUnit.RegisterUserTest.executor": "Run",
-    "JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
-    "JUnit.ServiceProviderTest.executor": "Run",
-    "JUnit.ServicrProviderTest.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Yazan",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: newUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Acceptance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginAdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginServiceProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegisterUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceProviderTest.the_new_package_added_to_the_system.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServicrProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Yazan&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -111,21 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginAdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.LoginAdminTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegisterUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
@@ -141,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -150,8 +126,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
-      <option name="METHOD_NAME" value="the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.ServiceProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceProviderTest.the_new_package_added_to_the_system" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.ServiceProviderTest" />
+      <option name="METHOD_NAME" value="the_new_package_added_to_the_system" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.RegisterUserTest" />
-        <item itemvalue="JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
-        <item itemvalue="JUnit.LoginAdminTest" />
         <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.ServiceProviderTest" />
+        <item itemvalue="JUnit.ServiceProviderTest.the_new_package_added_to_the_system" />
+        <item itemvalue="JUnit.RegisterUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -470,7 +461,15 @@
       <option name="project" value="LOCAL؜" />
       <updated>1712014185494</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL؜-٠٠٠٣٥" summary="finish project">
+      <option name="closed" value="true" />
+      <created>1712019533920</created>
+      <option name="number" value="٠٠٠٣٥" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣٥" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1712019533920</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -500,6 +499,7 @@
     <MESSAGE value="hello" />
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying" />
+    <MESSAGE value="finish project" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
   </component>
 </project>
