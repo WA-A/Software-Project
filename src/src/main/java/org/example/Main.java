@@ -89,20 +89,33 @@ public class Main {
     }
 
     private static void loginUserOrSignup(Scanner scanner, Application app) {
-        // Assuming you have methods for login and signup already implemented
         logger.info("1. Login");
         logger.info("2. Sign Up");
-        logger.info("Enter your choice: ");
-        int choice = scanner.nextInt();
-        User user;
-        if (choice == 1) {
-            user = loginUser(scanner, app); // Implement this method
-        } else {
-            user = signupUser(scanner, app); // Implement this method
+        logger.info("Enter your choice (1 for Login, 2 for Sign Up): ");
+
+        int choice = scanner.hasNextInt() ? scanner.nextInt() : 0; // Use 0 as a default for invalid inputs
+        scanner.nextLine(); // Consume the rest of the line to clean the input buffer
+
+        // Check for valid choice. If not valid, log message and return to main menu.
+        if (choice != 1 && choice != 2) {
+            logger.info(INVALID_CHOICE_MESSAGE + " Returning to main menu.");
+            return; // Exits the method, effectively returning to the main menu
         }
 
+        User user = null;
+        if (choice == 1) {
+            user = loginUser(scanner, app); // Calls the loginUser method
+        } else if (choice == 2) {
+            user = signupUser(scanner, app); // Calls the signupUser method
+        }
+
+        // If a user is successfully logged in or signed up, proceed to the user menu.
         if (user != null) {
             userMenu(scanner, user);
+        } else {
+            // If no user is returned (null), an error occurred or the user chose not to proceed,
+            // thus returning to the main menu without further action.
+            logger.info("No operation was performed. Returning to the main menu.");
         }
     }
 
@@ -114,9 +127,11 @@ public class Main {
             logger.info("3. Print ServiceProviders");
             logger.info("4. Print Users");
             logger.info("5. Print Events");
-            logger.info("6. Logout");
+            logger.info("6. Update ServiceProvider"); // New option for updating
+            logger.info("7. Logout");
             logger.info("Choose an action:");
             int action = scanner.nextInt();
+            scanner.nextLine(); // Consume newline left-over
 
             switch (action) {
                 case 1:
@@ -126,21 +141,23 @@ public class Main {
                     deleteServiceProvider(scanner, admin);
                     break;
                 case 3:
-                    String ss=admin.printServiceProviders();
+                    String ss = admin.printServiceProviders();
                     logger.info(ss);
                     break;
                 case 4:
-                    String abc=admin.printUsers();
-
+                    String abc = admin.printUsers();
                     logger.info(abc);
                     break;
                 case 5:
-                    String ab=admin.printEvents();
+                    String ab = admin.printEvents();
                     logger.info(ab);
                     break;
-                case 6:
+                case 6: // Case for updating service provider
+                    updateServiceProvider(scanner, admin);
+                    break;
+                case 7:
                     admin.setLogged(false);
-                    return;
+                    return; // Exit the admin menu
                 default:
                     logger.info(INVALID_CHOICE_MESSAGE);
                     break;
@@ -148,11 +165,25 @@ public class Main {
         }
     }
 
+    private static void updateServiceProvider(Scanner scanner, Admin admin) {
+        logger.info("Updating Service Provider:");
+        logger.info("Enter service provider's username:");
+        String username = scanner.nextLine();
+        logger.info("Enter update type (1 for password, 2 for phone number):");
+        int updateType = scanner.nextInt();
+        scanner.nextLine(); // Consume newline left-over after nextInt()
+        logger.info("Enter new value:");
+        String newValue = scanner.nextLine();
+
+        String result = admin.updateServiceProvider(username, updateType, newValue);
+        logger.info(result);
+    }
+
     private static void addServiceProvider(Scanner scanner, Admin admin) {
         logger.info("Adding a new Service Provider:");
 
         // Clear the scanner buffer and prompt for service provider details
-        scanner.nextLine(); // Necessary to catch any leftover newline characters
+
 
         logger.info("Enter service provider's username: ");
         String username = scanner.nextLine();
@@ -366,7 +397,6 @@ public class Main {
 
     private static User signupUser(Scanner scanner, Application app) {
         logger.info("Sign Up:");
-        scanner.nextLine(); // Consume newline left-over
 
         logger.info("Enter a username: ");
         String username = scanner.nextLine();

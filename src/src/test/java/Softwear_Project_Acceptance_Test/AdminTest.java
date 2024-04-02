@@ -76,4 +76,16 @@ public class AdminTest {
         response= admin.printEvents();
         assertEquals("All events have been printed",response);
     }
+
+
+    @Test
+    @Then("the service provider with username {string} should have the {string} updated to {string} in the system")
+    public void the_service_provider_with_username_should_have_the_updated_to_in_the_system() {
+    admin.addServiceProvider("yazan","123123","0987987","yazan@ex.com");
+    response=admin.updateServiceProvider("yazan",1,"321321");
+        String expectedResponse = "Success"; // Assume your updateServiceProvider method returns a success message on successful update.
+        assertEquals("Password updated successfully for yazan", response);
+    }
+
+
 }
