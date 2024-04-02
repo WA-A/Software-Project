@@ -228,9 +228,7 @@ public class User{
 
         // Iterate through the events
         for (Event e : Application.events) {
-            // Check if the event is associated with the given user name
             if (Objects.equals(e.getUserName(), userName)) {
-                // Construct the log message using built-in formatting
                 String logMessage = String.format("Event Title: %s%sLocation: %s%sNumber of Invitees: %d%sDate: %s%sStart At: %s%sEnd At: %s",
                         e.getEventTitle(), space, e.getLocation(), space, e.getNumOfInvitees(), space, e.getDate(), space, e.getStartAt(), space, e.getEndAt());
 

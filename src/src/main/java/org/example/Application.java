@@ -249,7 +249,11 @@ public ServiceProvider checkServiceProvider(String username,String password){
  public String registerUser(String username, String password, String email, String phoneNumber){
  User u=new User();
 
-
+  for(User user:users){
+   if(user.getEmail().equals(email)||user.getUsername().equals(username)) {
+    return "Invalid information, The register failed";
+   }
+  }
  u.setUsername(username);
 
 
@@ -259,11 +263,7 @@ public ServiceProvider checkServiceProvider(String username,String password){
  u.setEmail(email);
 
  u.setPhoneNum(phoneNumber);
- for(User user:users){
-  if(username.equals(user.getUsername())&& password.equals(user.getPassword())) {
-   return "Invalid information, The register failed";
-  }
- }
+
  u.setLogged(true);
  Application.users.add(u);
  return "The user is registerd Successfully";
