@@ -6,7 +6,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 
+import static org.example.Application.messages;
+
 public class ServiceProvider {
+
     private String username;
     private String password;
     private String email;
@@ -192,7 +195,7 @@ public String showMyPackeges(String username){
 
 public String showMessages(String servceProviderName){
     boolean flage= false;
-    for(Message m:Application.messages){
+    for(Message m: messages){
         if(m.getServiceProviderName().equals(servceProviderName)) {
             flage=true;
             LOGGER.info(m.getMessage());
