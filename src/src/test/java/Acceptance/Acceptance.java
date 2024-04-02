@@ -1,4 +1,4 @@
-package Softwear_Project_Acceptance_Test;
+package Acceptance;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -8,10 +8,7 @@ import org.junit.runner.RunWith;
         plugin = {"summary","html:target/cucumber/report.html"},
         monochrome = true,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        glue = {"Softwear_Project_Acceptance_Test"}
-
-)
-
+        glue = {"Softwear_Project_Acceptance_Test"})
 
 public class Acceptance {
 }

@@ -2,6 +2,8 @@ package org.example;
 import java.util.Iterator;
 import java.util.logging.Logger;
 
+import static org.example.Application.servicesProviders;
+
 public class Admin {
     private String username;
     private String password;
@@ -35,19 +37,26 @@ public class Admin {
         return this.isLogged;
     }
     public String addServiceProvider(String username,String password,String phoneNember,String email){
+
+
+        for(ServiceProvider aa:servicesProviders){
+            if(aa.getEmail().equals(email)||aa.getUsername().equals(username)) {
+                return "Invalid information, The register failed";
+            }
+        }
         ServiceProvider s=new ServiceProvider();
         s.setUsername(username);
         s.setPassword(password);
         s.setPhoneNum(phoneNember);
         s.setEmail(email);
         setLogged(false);
-        Application.servicesProviders.add(s);
+        servicesProviders.add(s);
         return "ServiceProvider added successfully";
     }
 
 
     public String deleteServiceProvider(String username, String phoneNumber) {
-        Iterator<ServiceProvider> iterator = Application.servicesProviders.iterator();
+        Iterator<ServiceProvider> iterator = servicesProviders.iterator();
         while (iterator.hasNext()) {
             ServiceProvider s = iterator.next();
             if (s.getPhoneNum().equals(phoneNumber) && s.getUsername().equals(username)) {
@@ -59,7 +68,7 @@ public class Admin {
     }
     public String printServiceProviders(){
         String space="     ";
-        for(ServiceProvider s: Application.servicesProviders){
+        for(ServiceProvider s: servicesProviders){
 
             logger.info("Username: "+s.getUsername()+space+"PhoneNumber: "+s.getPhoneNum()+space+"Email: "+s.getEmail());
         }
@@ -79,4 +88,24 @@ public class Admin {
         }
         return "All events has been printed";
     }
+
+    public String updateServiceProvider(String username, int updateType, String newValue) {
+        for (ServiceProvider serviceProvider : servicesProviders) {
+            if (serviceProvider.getUsername().equals(username)) {
+                if (updateType == 1) {
+                    serviceProvider.setPassword(newValue);
+                    return "Password updated successfully for " + username;
+                } else if (updateType == 2) {
+                    serviceProvider.setPhoneNum(newValue);
+                    return "Phone number updated successfully for " + username;
+                }
+            }
+
+        }
+        return "Service provider not found";
+    }
+
+
+
+
     }

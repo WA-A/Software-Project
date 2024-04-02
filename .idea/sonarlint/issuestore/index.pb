@@ -13,8 +13,6 @@ p
 @src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java,4\c\4ce45ad0490d033a09b9bffbdd45dc45b53281d1
 v
 Fsrc/src/test/java/Softwear_Project_Acceptance_Test/LoginAdminTest.java,3\f\3f2ff6f4dffb557c7a1cb473453d758628cd0c67
-r
-Bsrc/src/test/java/Softwear_Project_Acceptance_Test/Acceptance.java,a\f\afa074fe0d96b8a0ebf68f8c3b2852fc820fd83c
 x
 Hsrc/src/test/java/Softwear_Project_Acceptance_Test/RegisterUserTest.java,e\a\eaf682320bfc249fb1ba0682a10f3f84b2a63a09
 W
@@ -31,3 +29,11 @@ b
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 b
 2src/src/main/java/org/example/ServiceProvider.java,3\c\3cf4051833b78e47c5d68b7a98e953669a6d006a
+;
+src/pom.xml,e\d\ede8cb65219dd2c6946d2acf49a0d97d43715393
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+\
+,src/src/test/java/Acceptance/Acceptance.java,c\7\c7a6ad7278659b8bb330719cdf822655951c2307
+X
+(src/src/main/java/org/example/Admin.java,f\3\f30a77985dc6f786bd1e353c12381695fa4b426e

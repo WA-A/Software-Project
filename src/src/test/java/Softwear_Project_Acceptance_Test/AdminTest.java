@@ -5,6 +5,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.Admin;
 import static org.junit.Assert.*;
+
+import org.example.Application;
 import org.junit.Test;
 
 public class AdminTest {
@@ -76,4 +78,13 @@ public class AdminTest {
         response= admin.printEvents();
         assertEquals("All events has been printed",response);
     }
+
+    @Test
+    @Then("the service provider with username {string} should have the {string} updated to {string} in the system")
+    public void the_service_provider_with_username_should_have_the_updated_to_in_the_system() {
+       admin.addServiceProvider("mohammad","123123","09875468","mohammad.com");
+        response=admin.updateServiceProvider("mohammad",1,"321321");
+        assertEquals("Password updated successfully for mohammad", response);
+    }
+
 }

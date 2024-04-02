@@ -192,6 +192,4 @@ public class ServiceProviderTest {
         response=serviceProvider.showMessages("abdullah");
         assertEquals("No massages found",response);
     }
-
-
 }
