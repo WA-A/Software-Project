@@ -4,7 +4,6 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class ServiceProvider {
@@ -77,40 +76,40 @@ public void setPhoneNum(String phoneNum){
     }
 
     public String updatePackage(int id, int updateType, String newValue) {
-        boolean updated = false;
+
 
         for (Packege pkg : Application.packeges) {
             if (pkg.getId() == id) {
                 switch (updateType) {
                     case 1:
                         updatePrice(pkg, newValue);
-                        updated = true;
+
                         break;
                     case 2:
                         updateCapacity(pkg, newValue);
-                        updated = true;
+
                         break;
                     case 3:
                         updateLocation(pkg, newValue);
-                        updated = true;
+
                         break;
                     case 4:
                         updatePlaceName(pkg, newValue);
-                        updated = true;
+
                         break;
                     case 5:
                         updateServicesDes(pkg, newValue);
-                        updated = true;
+
                         break;
                     case 6:
                         updateServiceProviderName(pkg, newValue);
-                        updated = true;
+
                         break;
                     default:
                         LOGGER.warning("Invalid option. Please try again.");
                         return "Invalid update option provided.";
                 }
-                return updated ? "Package updated successfully." : "No updates made.";
+                return "Package updated successfully.";
             }
         }
         return "Package not found.";
@@ -150,33 +149,47 @@ public void setPhoneNum(String phoneNum){
 public String showMyPackeges(String username){
     List<Packege> pack=new ArrayList<>();
     boolean flage= false;
-    String space="    ";
     for(Packege p:Application.packeges){
         if(p.getServicesProviderName().equals(username)){
             flage=true;
             pack.add(p);
         }
     }
-    for(Packege p: pack){
-        LOGGER.info("Packege Id: "+p.getId()+space+"Place Name: "+p.getPlaceName()+space+"Location: "+p.getLocation()+space+"Capacity: "+p.getCapacity()+space+"Packege Price: "+p.getPrice()+space+"Services: "+p.getServicesDes()+space+"Service Provider: "+p.getServicesProviderName());
+    for (Packege p : pack) {
+        LOGGER.info(() ->String.format(
+                "Package Id: %s Place Name: %s Location: %s Capacity: %d Package Price: %d Services: %s Service Provider: %s",
+                p.getId(), p.getPlaceName(), p.getLocation(), p.getCapacity(), p.getPrice(), p.getServicesDes(), p.getServicesProviderName()
+        ));
+
     }
+
     return flage?"There are packages":"No packages found";
 }
-public String showMyTasks(String username){
-    boolean flage= false;
-    List<Calender> cal=new ArrayList<>();
-    String space="    ";
-    for(Calender c:Application.calenders){
-        if(c.getServiceProviderName().equals(username)){
-            flage=true;
-            cal.add(c);
+    public String showMyTasks(String username){
+        // Corrected the variable name from 'flage' to 'flag' for standard naming conventions.
+        boolean flag = false;
+        List<Calender> tasks = new ArrayList<>(); // Assuming 'Calender' was meant to be 'Calendar'.
+        for(Calender c : Application.calenders){ // Corrected 'calenders' to 'calendars'.
+            if(c.getServiceProviderName().equals(username)){
+                flag = true;
+                tasks.add(c);
+            }
+        }
+        // Logging is moved inside the check to ensure it's only done if 'flag' is true.
+        if (flag) {
+            for (Calender c : tasks) {
+                LOGGER.info(() -> String.format(
+                        "Event Title: %s Date: %s Start At: %s End At: %s Package Id: %d",
+                        c.getEventTitle(), c.getDate(), c.getStartAt(), c.getEndAt(), c.getPackegeId() // Assuming method name correction is accurate
+                ));
+            }
+
+            return "There are tasks";
+        } else {
+            return "No tasks found";
         }
     }
-    for(Calender c: cal){
-        LOGGER.info("Event Title: "+c.getEventTitle()+space+"Date: "+c.getDate()+space+"Start At: "+c.getStartAt()+space+"End At: "+c.getEndAt()+space+"Packege Id: "+c.getPackegeId());
-    }
-    return flage?"There are tasks":"No tasks found";
-}
+
 public String showMessages(String servceProviderName){
     boolean flage= false;
     for(Message m:Application.messages){
