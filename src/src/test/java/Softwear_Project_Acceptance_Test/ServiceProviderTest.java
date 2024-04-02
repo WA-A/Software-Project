@@ -12,7 +12,7 @@ import org.example.ServiceProvider;
 import org.junit.Test;
 
 
-public class ServicrProviderTest {
+public class ServiceProviderTest {
     private Application app = new Application();
     private  String response;
     private ServiceProvider serviceProvider=new ServiceProvider();
@@ -143,7 +143,7 @@ public class ServicrProviderTest {
     public void views_their_packages(String serviceProviderName) {
         // Use the adapted method to retrieve package descriptions
 
-
+        response=serviceProvider.showMyPackeges(serviceProviderName);
 
     }
 @Test

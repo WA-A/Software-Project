@@ -249,15 +249,21 @@ public ServiceProvider checkServiceProvider(String username,String password){
  public String registerUser(String username, String password, String email, String phoneNumber){
  User u=new User();
 
-for(User c: users){
- if(c.getEmail().equals(email)||c.getPassword().equals(password)||c.getPhoneNum().equals(phoneNumber)){
-  return "Invalid information, The register failed";
- }
-}
-  u.setUsername(username);
-  u.setPassword(password);
+  for(User user:users){
+   if(user.getEmail().equals(email)||user.getUsername().equals(username)) {
+    return "Invalid information, The register failed";
+   }
+  }
+ u.setUsername(username);
+
+
+ u.setPassword(password);
+
+
  u.setEmail(email);
+
  u.setPhoneNum(phoneNumber);
+
  u.setLogged(true);
  Application.users.add(u);
  return "The user is registerd Successfully";
