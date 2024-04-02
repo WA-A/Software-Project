@@ -6,10 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="trying">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/576343e4a465872c49b3d269734bf5a8953333bd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/576343e4a465872c49b3d269734bf5a8953333bd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cddc8ba217bb4d02cd0dadec3cc51fd14e025af" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/669a682f64be735900bbe8848ad97b310e91fa23" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/9124026a7cb6db50b19f84ad157797441e734b50" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginAdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginServiceProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/LoginUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/RegisterUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServiceProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/ServicrProviderTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,16 +73,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-    &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: newUser.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Yazan&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
-    }
-    }</component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: newUser.executor": "Run",
+    "JUnit.AdminTest.executor": "Run",
+    "JUnit.LoginAdminTest.executor": "Run",
+    "JUnit.LoginServiceProviderTest.executor": "Run",
+    "JUnit.LoginUserTest.executor": "Run",
+    "JUnit.RegisterUserTest.executor": "Run",
+    "JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
+    "JUnit.ServiceProviderTest.executor": "Run",
+    "JUnit.ServicrProviderTest.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "Yazan",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -89,25 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: newUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/src/main/resources/Cases/newUser.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="src" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: newUser" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginAdminTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -116,13 +120,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.AdminTest" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.LoginAdminTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepDefinitions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +135,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
+      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
+      <option name="METHOD_NAME" value="the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Cucumber Java.Feature: newUser" />
+        <item itemvalue="JUnit.RegisterUserTest" />
+        <item itemvalue="JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
+        <item itemvalue="JUnit.LoginAdminTest" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.StepDefinitions" />
-        <item itemvalue="JUnit.AdminTest" />
       </list>
     </recent_temporary>
   </component>
@@ -434,7 +454,23 @@
       <option name="project" value="LOCALØœ" />
       <updated>1711920660137</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL؜-٠٠٠٣٣" summary="trying">
+      <option name="closed" value="true" />
+      <created>1712014017074</created>
+      <option name="number" value="٠٠٠٣٣" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣٣" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1712014017074</updated>
+    </task>
+    <task id="LOCAL؜-٠٠٠٣٤" summary="trying">
+      <option name="closed" value="true" />
+      <created>1712014185494</created>
+      <option name="number" value="٠٠٠٣٤" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣٤" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1712014185494</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="UnknownFeatures">
