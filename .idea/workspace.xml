@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4567651a-0c81-49bb-9a3f-0a6c10269490" name="Changes" comment="LoginUser">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afa074fe0d96b8a0ebf68f8c3b2852fc820fd83c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/f/afa074fe0d96b8a0ebf68f8c3b2852fc820fd83c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/ExpenseTracking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/Acceptance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Acceptence/Acceptance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/AdminTest.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +36,6 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="18" />
-        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -67,19 +57,7 @@
   "keyToString": {
     "Cucumber Java.Feature: LoginUser.executor": "Run",
     "Cucumber Java.Feature: newAdmin.executor": "Coverage",
-    "JUnit.Acceptence in src.executor": "Coverage",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.LoginAdmin.executor": "Run",
-    "JUnit.LoginServiceProvider.executor": "Run",
-    "JUnit.LoginUser.executor": "Run",
-    "JUnit.RegisterUser.executor": "Run",
-    "JUnit.RegisterUser.i_should_email_and_password_is_valid.executor": "Run",
-    "JUnit.RegisterUser.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
-    "JUnit.Softwear_Project_Acceptance_Test in src.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Batool",
+
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -92,15 +70,22 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Softwear_Project_Acceptance_Test in src">
-    <configuration name="Acceptence in src" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+
       <module name="src" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/src/test/java/Acceptence" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: newAdmin" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -109,40 +94,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
-      <option name="TEST_OBJECT" value="class" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterUserTest.i_should_email_and_password_is_valid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Acceptence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
-      <option name="METHOD_NAME" value="i_should_email_and_password_is_valid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Acceptence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.RegisterUserTest" />
-      <option name="METHOD_NAME" value="the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
-      <option name="TEST_OBJECT" value="method" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,21 +115,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Softwear_Project_Acceptance_Test in src" />
-        <item itemvalue="JUnit.Acceptence in src" />
-        <item itemvalue="JUnit.RegisterUserTest" />
-        <item itemvalue="JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken" />
-        <item itemvalue="JUnit.RegisterUserTest.i_should_email_and_password_is_valid" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
-  </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -429,32 +372,7 @@
       <option name="presentableId" value="LOCAL؜-٠٠٠٣١" />
       <option name="project" value="LOCAL؜" />
       <updated>1711920300765</updated>
-    </task>
-    <task id="LOCAL-00032" summary="LoginUser Not Complated">
-      <option name="closed" value="true" />
-      <created>1711979708735</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1711979708735</updated>
-    </task>
-    <task id="LOCAL-00033" summary="LoginUser">
-      <option name="closed" value="true" />
-      <created>1711990180881</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1711990180881</updated>
-    </task>
-    <task id="LOCAL-00034" summary="LoginUser">
-      <option name="closed" value="true" />
-      <created>1712009881095</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1712009881095</updated>
-    </task>
-    <option name="localTasksCounter" value="35" />
+
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -486,14 +404,6 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="LoginUser Not Complated" />
     <MESSAGE value="trying" />
-    <MESSAGE value="LoginUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginUser" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Software_Project$Softwear_Project_Acceptance_Test_in_src.ic" NAME="Softwear_Project_Acceptance_Test in src Coverage Results" MODIFIED="1712087729543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Softwear_Project$Feature__LoginUser.ic" NAME="Feature: LoginUser Coverage Results" MODIFIED="1711974562381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>io.cucumber.core.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Software_Project$Acceptence_in_src.ic" NAME="Acceptence in src Coverage Results" MODIFIED="1712087077268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+
   </component>
 </project>
