@@ -58,25 +58,34 @@ public class Admin {
         return null;
     }
     public String printServiceProviders(){
-        String space="     ";
-        for(ServiceProvider s: Application.servicesProviders){
+        for(ServiceProvider s : Application.servicesProviders) {
+            String message = String.format(
+                    "Username: %s     PhoneNumber: %s     Email: %s",
+                    s.getUsername(), s.getPhoneNum(), s.getEmail()
+            );
+            logger.info(message);
+        }
+        return "All service providers have been printed";
+    }
 
-            logger.info("Username: "+s.getUsername()+space+"PhoneNumber: "+s.getPhoneNum()+space+"Email: "+s.getEmail());
-        }
-        return "All ServiceProvider has been printed";
-    }
     public String printUsers(){
-        String space="     ";
-        for (User u:Application.users){
-            logger.info("Username: "+u.getUsername()+space+"PhoneNumber: "+u.getPhoneNum()+space+"Email: "+u.getEmail());
+        for (User u : Application.users) {
+            String message = String.format(
+                    "Username: %s     PhoneNumber: %s     Email: %s",
+                    u.getUsername(), u.getPhoneNum(), u.getEmail()
+            );
+            logger.info(message);
         }
-        return "All users has been printed";
+        return "All users have been printed";
     }
+
     public String printEvents(){
-        String space="   ";
-        for(Event e:Application.events) {
-            logger.info("Event Title: " + e.getEventTitle()+space +"Location: "+e.getLocation()+space+"Date: "+e.getDate()+space+"Start at: "+e.getStartAt()+space+"End at: "+e.getEndAt()+space+"Number of Invitees: "+e.getNumOfInvitees()+space+"User Name: "+e.getUserName()+space+"Packege Id: "+e.getPackegeId()+space+"Service Provider: "+e.getServiceProviderName());
+        for(Event e : Application.events) {
+            String message = String.format(
+                    "Event Title: %s   Location: %s   Date: %s   Start at: %s   End at: %s   Number of Invitees: %d   User Name: %s   Package Id: %s   Service Provider: %s",
+                    e.getEventTitle(), e.getLocation(), e.getDate(), e.getStartAt(), e.getEndAt(), e.getNumOfInvitees(), e.getUserName(), e.getPackegeId(), e.getServiceProviderName()
+            );
+            logger.info(message);
         }
-        return "All events has been printed";
-    }
-    }
+        return "All events have been printed";
+    }}

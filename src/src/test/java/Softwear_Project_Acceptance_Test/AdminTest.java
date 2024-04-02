@@ -49,7 +49,7 @@ public class AdminTest {
     @Then("the system should display all service providers with their username, phone number, and email")
     public void the_system_should_display_all_service_providers_with_their_username_phone_number_and_email() {
         response= admin.printServiceProviders();
-        assertEquals("All ServiceProvider has been printed",response);
+        assertEquals("All service providers have been printed",response);
     }
 
     @When("the admin requests to print all users")
@@ -61,7 +61,7 @@ public class AdminTest {
     @Then("the system should display all users with their username, phone number, and email")
     public void the_system_should_display_all_users_with_their_username_phone_number_and_email() {
         response= admin.printUsers();
-        assertEquals("All users has been printed",response);
+        assertEquals("All users have been printed",response);
     }
 
     @When("the admin requests to print all events")
@@ -74,6 +74,6 @@ public class AdminTest {
     @Then("the system should display all events with their title, location, date, start and end times, number of invitees, user name, package id, and service provider name")
     public void the_system_should_display_all_events_with_their_title_location_date_start_and_end_times_number_of_invitees_user_name_package_id_and_service_provider_name() {
         response= admin.printEvents();
-        assertEquals("All events has been printed",response);
+        assertEquals("All events have been printed",response);
     }
 }
