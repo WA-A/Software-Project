@@ -74,7 +74,7 @@ public class Main {
     }
 
     private static void loginServiceProvider(Scanner scanner, Application app) {
-       logger.info("Enter service provider username: ");
+        logger.info("Enter service provider username: ");
         String username = scanner.next();
         logger.info("Enter service provider password: ");
         String password = scanner.next();
@@ -263,13 +263,13 @@ public class Main {
         logger.info("Enter place name: ");
         String placeName = scanner.nextLine();
 
-        logger.info("Enter package services: ");
-        String services = scanner.nextLine();
+        logger.info("Enter package description: ");
+        String description = scanner.nextLine();
 
         String serviceProviderName = serviceProvider.getUsername();
 
 
-        String result = serviceProvider.addPackage(packageId, price, capacity, location, placeName, services, serviceProviderName);
+        String result = serviceProvider.addPackage(packageId, price, capacity, location, placeName, description, serviceProviderName);
         logger.info(result);
     }
 
@@ -382,11 +382,16 @@ public class Main {
 
 
 
+        String check=app.registerUser(username,password,email,phoneNum);
+        if(check.equals("Invalid information, The register failed")) {
+            logger.info("Username and password combination already exists. Please choose another.");
+            return null;
+        }
 
-        app.registerUser(username,password,email,phoneNum);
+
         User newUser = app.checkUser(username,password);
-        Application.users.add(newUser);
-        newUser.setLogged(true);
+        //Application.users.add(newUser);
+        //newUser.setLogged(true);
 
         logger.info("Registration successful.");
         return newUser;
@@ -430,14 +435,14 @@ public class Main {
         // Assuming package selection is needed after the initial event creation
         logger.info("Enter the package ID you want to approve: ");
         int packageId = scanner.nextInt();
-        String packageChoiceResult = user.choosePackage(packageId);
+        String packageChoiceResult = user.choosePackege(packageId);
         logger.info(packageChoiceResult); // Log the result of package selection
     }
 
 
 
     private static void deleteEvent(Scanner scanner, User user) {
-       logger.info("Deleting an event:");
+        logger.info("Deleting an event:");
         scanner.nextLine(); // Consume any leftover newline characters
 
         logger.info("Enter the event title you want to delete: ");
