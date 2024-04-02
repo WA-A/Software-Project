@@ -74,7 +74,7 @@ public class Main {
     }
 
     private static void loginServiceProvider(Scanner scanner, Application app) {
-       logger.info("Enter service provider username: ");
+        logger.info("Enter service provider username: ");
         String username = scanner.next();
         logger.info("Enter service provider password: ");
         String password = scanner.next();
@@ -382,12 +382,14 @@ public class Main {
 
 
 
+        String check=app.registerUser(username,password,email,phoneNum);
+        if(check.equals("Invalid information, The register failed")) {
+            logger.info("Username or Email combination already exists. Please choose another.");
+            return null;
+        }
 
-        app.registerUser(username,password,email,phoneNum);
+
         User newUser = app.checkUser(username,password);
-        Application.users.add(newUser);
-        newUser.setLogged(true);
-
         logger.info("Registration successful.");
         return newUser;
     }
@@ -437,7 +439,7 @@ public class Main {
 
 
     private static void deleteEvent(Scanner scanner, User user) {
-       logger.info("Deleting an event:");
+        logger.info("Deleting an event:");
         scanner.nextLine(); // Consume any leftover newline characters
 
         logger.info("Enter the event title you want to delete: ");

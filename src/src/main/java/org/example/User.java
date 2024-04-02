@@ -18,50 +18,50 @@ public class User{
     private String phoneNum;
     private boolean isLogged;
     private static final Logger LOGGER = Logger.getLogger(User.class.getName());
-   protected static final List<Packege> packegesAfterFilter = new ArrayList<>();
+    protected static final List<Packege> packegesAfterFilter = new ArrayList<>();
     protected static final List<Event> currentEvent= new ArrayList<>();
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm");
 
 
 
-public User(){
-    username=null;
-    password=null;
-    email=null;
-    phoneNum=null;
-    isLogged=false;
-}
+    public User(){
+        username=null;
+        password=null;
+        email=null;
+        phoneNum=null;
+        isLogged=false;
+    }
     public void setLogged(boolean isLogged){
         this.isLogged=isLogged;
     }
     public boolean getLogged(){
-    return this.isLogged;
+        return this.isLogged;
     }
-public void setUsername(String username){
-    this.username=username;
-}
-public void setPassword(String password){
-    this.password=password;
-}
-public void setEmail(String email){
-    this.email=email;
-}
+    public void setUsername(String username){
+        this.username=username;
+    }
+    public void setPassword(String password){
+        this.password=password;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
 
-public void setPhoneNum(String phoneNum){
-    this.phoneNum=phoneNum;
-}
-public String getUsername(){
-    return this.username;
-}
-public String getPassword(){
-    return this.password;
-}
-public String getEmail(){
-    return this.email;
-}
-public String getPhoneNum(){
-    return this.phoneNum;
-}
+    public void setPhoneNum(String phoneNum){
+        this.phoneNum=phoneNum;
+    }
+    public String getUsername(){
+        return this.username;
+    }
+    public String getPassword(){
+        return this.password;
+    }
+    public String getEmail(){
+        return this.email;
+    }
+    public String getPhoneNum(){
+        return this.phoneNum;
+    }
     public String creatEvent(String eventT,int b,String loc,int numInvite,String d,String startTime,String endTime){
         String eventTitle=eventT;
         int budget = b;
@@ -74,12 +74,12 @@ public String getPhoneNum(){
         if(packAfterLoc.isEmpty()){
             return "We do not have a package with the same location";
         }
-         int numInvitees=numInvite;
+        int numInvitees=numInvite;
         List<Packege> packAfterCapacity=filterByCapacity(packAfterLoc,numInvitees);
         if(packAfterCapacity.isEmpty()){
             return "We do not have a package with the same Capacity";
         }
-       String date=d;
+        String date=d;
         String startAt=startTime;
         String endAt=endTime;
         List<Packege> packAfterTime= filterByStartTime(packAfterCapacity,date,startAt);
@@ -87,25 +87,25 @@ public String getPhoneNum(){
             return "This day at this time is unavailable";
         }
 
-       for (Packege p: packAfterTime){
-           packegesAfterFilter.add(p);
-           String logMessage = MessageFormat.format(
-                   "Package Id: {0}    Place Name: {1}    Location: {2}    Capacity: {3}    Package Price: {4}    Services: {5}    Service Provider: {6}",
-                   p.getId(), p.getPlaceName(), p.getLocation(), p.getCapacity(), p.getPrice(), p.getServicesDes(), p.getServicesProviderName());
-           LOGGER.info(logMessage);
-       }
+        for (Packege p: packAfterTime){
+            packegesAfterFilter.add(p);
+            String logMessage = MessageFormat.format(
+                    "Package Id: {0}    Place Name: {1}    Location: {2}    Capacity: {3}    Package Price: {4}    Services: {5}    Service Provider: {6}",
+                    p.getId(), p.getPlaceName(), p.getLocation(), p.getCapacity(), p.getPrice(), p.getServicesDes(), p.getServicesProviderName());
+            LOGGER.info(logMessage);
+        }
 
-Event e=new Event();
-       e.setEventTitle(eventTitle);
-       e.setUserName(this.getUsername());
-       e.setLocation(location);
-       e.setDate(date);
-       e.setNumOfInvitees(numInvitees);
-       e.setStartAt(startAt);
-       e.setEndAt(endAt);
-       currentEvent.add(e);
+        Event e=new Event();
+        e.setEventTitle(eventTitle);
+        e.setUserName(this.getUsername());
+        e.setLocation(location);
+        e.setDate(date);
+        e.setNumOfInvitees(numInvitees);
+        e.setStartAt(startAt);
+        e.setEndAt(endAt);
+        currentEvent.add(e);
 
-   return "Please enter the Packege Id that you want to approve: ";
+        return "Please enter the Packege Id that you want to approve: ";
     }
     public String choosePackege(int packId) {
         String serviceProviderName = null;
@@ -116,7 +116,7 @@ Event e=new Event();
                 break;
             }
         }
-       if (serviceProviderName == null) {
+        if (serviceProviderName == null) {
             return "Invalid Package Id";
         }
         if (currentEvent.isEmpty()) {
@@ -196,12 +196,12 @@ Event e=new Event();
     }
 
     private List<Packege> filterByLocation(List<Packege> packAfterBud, String location) {
-    List<Packege> pack=new ArrayList<>();
-    for(Packege p:packAfterBud){
-        if(p.getLocation().equals(location)){
-             pack.add(p);
+        List<Packege> pack=new ArrayList<>();
+        for(Packege p:packAfterBud){
+            if(p.getLocation().equals(location)){
+                pack.add(p);
+            }
         }
-    }
         return pack;
     }
 
@@ -219,27 +219,25 @@ Event e=new Event();
 
 
 
-        public String showMyEvents(String userName) {
-            // Initialize a space string for formatting output
-            String space = "    ";
+    public String showMyEvents(String userName) {
+        // Initialize a space string for formatting output
+        String space = "    ";
 
-            // Flag to indicate if any events were found for the user
-            boolean eventFound = false;
+        // Flag to indicate if any events were found for the user
+        boolean eventFound = false;
 
-            // Iterate through the events
-            for (Event e : Application.events) {
-                // Check if the event is associated with the given user name
-                if (Objects.equals(e.getUserName(), userName)) {
-                    // Construct the log message using built-in formatting
-                    String logMessage = String.format("Event Title: %s%sLocation: %s%sNumber of Invitees: %d%sDate: %s%sStart At: %s%sEnd At: %s",
-                            e.getEventTitle(), space, e.getLocation(), space, e.getNumOfInvitees(), space, e.getDate(), space, e.getStartAt(), space, e.getEndAt());
+        // Iterate through the events
+        for (Event e : Application.events) {
+            if (Objects.equals(e.getUserName(), userName)) {
+                String logMessage = String.format("Event Title: %s%sLocation: %s%sNumber of Invitees: %d%sDate: %s%sStart At: %s%sEnd At: %s",
+                        e.getEventTitle(), space, e.getLocation(), space, e.getNumOfInvitees(), space, e.getDate(), space, e.getStartAt(), space, e.getEndAt());
 
-                    LOGGER.info(logMessage);
-                    eventFound = true;
-                }
+                LOGGER.info(logMessage);
+                eventFound = true;
             }
-            return eventFound ? "All your events have been shown." : "No events found for the user.";
         }
+        return eventFound ? "All your events have been shown." : "No events found for the user.";
+    }
 
 
     public String deleteEvent(String title) {

@@ -195,7 +195,7 @@ public class UserTest {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-@Test
+    @Test
     @Then("the event {string} should be successfully deleted")
     public void the_event_should_be_successfully_deleted() {
         String Title="Meeting 1";
@@ -219,6 +219,3 @@ public class UserTest {
 
 
 }
-
-
-

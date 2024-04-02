@@ -28,15 +28,15 @@ public class LoginServiceProviderTest {
     public void the_service_provider_enters_a_valid_username_mohammad_and_password_are_checked(Integer int1) {
 
     }
-@Test
+    @Test
     @Then("the serviceProvider is found and logged in")
     public void the_service_provider_is_found_and_logged_in() {
-     username="abdullah";
-      password="112233";
+        username="abdullah";
+        password="112233";
         user=  application.checkServiceProvider(username, password);
         assertNotNull(user);
     }
-@Test
+    @Test
     @Then("The serviceProvider should be logged in successfully in The Service Provider is found    Successfully Login")
     public void the_service_provider_should_be_logged_in_successfully_in_the_service_provider_is_found_successfully_login() {
         username="abdullah";
@@ -50,7 +50,7 @@ public class LoginServiceProviderTest {
     public void the_service_provider_enters_a_valid_username_mohammad_and_incorrect_password_in_wrong_password_are_checked(String string) {
 
     }
-@Test
+    @Test
     @Then("the service Provider is notfound and logged in")
     public void the_service_provider_is_notfound_and_logged_in() {
         username="abdullah";
