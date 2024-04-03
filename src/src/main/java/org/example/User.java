@@ -136,6 +136,10 @@ public class User{
         c.setStartAt(e.getStartAt());
         c.setEndAt(e.getEndAt());
         Application.calenders.add(c);
+
+        String message = String.format("A new event titled '%s' on date %s has been reserved with your package ID %d.",
+                e.getEventTitle(), e.getDate(), e.getPackegeId());
+        Application.sendMessage(message, serviceProviderName);
         return "The event is created Successfully";
     }
 

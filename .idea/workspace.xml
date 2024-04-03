@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="LoginUser">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,31 +54,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Cucumber Java.Feature: newUser.executor": "Run",
-    "JUnit.Acceptance.executor": "Run",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.AdminTest.the_service_provider_with_username_should_have_the_updated_to_in_the_system.executor": "Run",
-    "JUnit.LoginAdminTest.executor": "Run",
-    "JUnit.LoginServiceProviderTest.executor": "Run",
-    "JUnit.LoginUserTest.executor": "Run",
-    "JUnit.RegisterUserTest.executor": "Run",
-    "JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
-    "JUnit.ServiceProviderTest.executor": "Run",
-    "JUnit.ServiceProviderTest.the_new_package_added_to_the_system.executor": "Run",
-    "JUnit.ServicrProviderTest.executor": "Run",
-    "JUnit.Softwear_Project_Acceptance_Test in src (1).executor": "Run",
-    "JUnit.Softwear_Project_Acceptance_Test in src.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "Batool",
-    "kotlin-language-version-configured": "true"
+
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -460,7 +437,15 @@
       <option name="project" value="LOCAL؜" />
       <updated>1712019533920</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL؜-٠٠٠٣٦" summary="finish project">
+      <option name="closed" value="true" />
+      <created>1712098938119</created>
+      <option name="number" value="٠٠٠٣٦" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣٦" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1712098938119</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -491,8 +476,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
     <MESSAGE value="finish project" />
-    <MESSAGE value="LoginUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginUser" />
+
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Software_Project$Softwear_Project_Acceptance_Test_in_src.ic" NAME="Softwear_Project_Acceptance_Test in src Coverage Results" MODIFIED="1712087729543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
