@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="finish project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,28 +54,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: newUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Acceptance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminTest.the_service_provider_with_username_should_have_the_updated_to_in_the_system.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginAdminTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginServiceProviderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceProviderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceProviderTest.the_new_package_added_to_the_system.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServicrProviderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Softwear_Project_Acceptance_Test in src.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;newyazan&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+
   }
 }</component>
   <component name="RecentsManager">
@@ -86,7 +62,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.Softwear_Project_Acceptance_Test in src (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="src" />
@@ -116,17 +92,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Softwear_Project_Acceptance_Test in src (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Softwear_Project_Acceptance_Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Softwear_Project_Acceptance_Test" />
-      <option name="MAIN_CLASS_NAME" value="Softwear_Project_Acceptance_Test.ServiceProviderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Softwear_Project_Acceptance_Test in src (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Softwear_Project_Acceptance_Test in src" />
         <item itemvalue="JUnit.AdminTest.the_service_provider_with_username_should_have_the_updated_to_in_the_system" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.ServiceProviderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -507,11 +476,16 @@
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
     <MESSAGE value="finish project" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
+
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Software_Project$Softwear_Project_Acceptance_Test_in_src.ic" NAME="Softwear_Project_Acceptance_Test in src Coverage Results" MODIFIED="1712087729543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/SProject$Softwear_Project_Acceptance_Test_in_src.ic" NAME="Softwear_Project_Acceptance_Test in src Coverage Results" MODIFIED="1712097189483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Softwear_Project_Acceptance_Test.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Softwear_Project$Feature__LoginUser.ic" NAME="Feature: LoginUser Coverage Results" MODIFIED="1711974562381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Software_Project$Acceptence_in_src.ic" NAME="Acceptence in src Coverage Results" MODIFIED="1712087077268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
