@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at________Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at________Changes_.xml" afterDir="false" />
+    <list default="true" id="d490b3d3-c216-4c38-b1f6-e18517bc0632" name="Changes" comment="finish project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/test/java/Softwear_Project_Acceptance_Test/AdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/org/example/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +57,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Cucumber Java.Feature: newUser.executor": "Run",
-    "JUnit.Acceptance.executor": "Run",
-    "JUnit.AdminTest.executor": "Run",
-    "JUnit.AdminTest.the_service_provider_with_username_should_have_the_updated_to_in_the_system.executor": "Run",
-    "JUnit.LoginAdminTest.executor": "Run",
-    "JUnit.LoginServiceProviderTest.executor": "Run",
-    "JUnit.LoginUserTest.executor": "Run",
-    "JUnit.RegisterUserTest.executor": "Run",
-    "JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor": "Run",
-    "JUnit.ServiceProviderTest.executor": "Run",
-    "JUnit.ServiceProviderTest.the_new_package_added_to_the_system.executor": "Run",
-    "JUnit.ServicrProviderTest.executor": "Run",
-    "JUnit.Softwear_Project_Acceptance_Test in src.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "newyazan",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: newUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Acceptance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminTest.the_service_provider_with_username_should_have_the_updated_to_in_the_system.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginAdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginServiceProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegisterUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegisterUserTest.the_user_should_see_an_error_message_indicating_the_email_is_already_taken.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceProviderTest.the_new_package_added_to_the_system.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServicrProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Softwear_Project_Acceptance_Test in src.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;newyazan&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
@@ -472,7 +468,15 @@
       <option name="project" value="LOCAL؜" />
       <updated>1712019533920</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL؜-٠٠٠٣٦" summary="finish project">
+      <option name="closed" value="true" />
+      <created>1712098938119</created>
+      <option name="number" value="٠٠٠٣٦" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٣٦" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1712098938119</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -503,7 +507,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="trying" />
     <MESSAGE value="finish project" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SProject$Softwear_Project_Acceptance_Test_in_src.ic" NAME="Softwear_Project_Acceptance_Test in src Coverage Results" MODIFIED="1712097189483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

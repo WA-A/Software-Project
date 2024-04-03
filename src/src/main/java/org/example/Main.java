@@ -221,7 +221,7 @@ public class Main {
         if (result == null) {
             logger.info("No matching service provider found.");
         } else {
-            logger.info(result); // Log the success message
+            logger.info(result);
         }
     }
 
@@ -442,7 +442,7 @@ public class Main {
         logger.info("Enter number of invitees: ");
         int numInvitees = scanner.nextInt();
 
-        logger.info("Enter date (e.g., YYYY-MM-DD): ");
+        logger.info("Enter date (e.g., DD/MM/YYYY): ");
         scanner.nextLine(); // Consume newline
         String date = scanner.nextLine();
 
